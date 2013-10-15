@@ -1,0 +1,36 @@
+﻿@inherits UmbracoTemplatePage
+@{
+    Layout = "Main.cshtml";
+}
+
+<span id="siteBaseUrl" class="hide">@Model.Content.AncestorOrSelf(1).Sibling("Settings").GetProperty("siteBaseUrl").Value</span>
+<span id="landId" class="hide">@Model.Content.GetProperty("kostenland").Value</span>
+
+<h1>@Umbraco.GetDictionaryValue("Patentkosten") @Model.Content.Name</h1>
+
+<div id="currencyswitch">
+    <input name="currency" id="euro" type="radio" value="euro"/><label for="euro">euro</label>
+    <input name="currency" id="dollar" type="radio" value="dollar"/><label for="dollar">dollar</label>
+</div>
+
+
+<canvas id="myChart" width="600" height="400"></canvas>
+
+<p>@Umbraco.Field("omschrijving")</p>
+
+<span id="landid" class="hide">@Umbraco.Field("kostenland")</span>
+
+@section title
+{
+    @Umbraco.GetDictionaryValue("Patentkosten") @Model.Content.Name
+}
+
+@section optionalJs
+{
+    <script type="text/javascript" src="/static/js/jquery-1.10.2.min.js"></script>
+    <script src="/static/js/Chart.js"></script>
+    <script src="/static/js/custom.js"></script>
+    <script src="/static/js/graph.js"></script>
+}
+
+

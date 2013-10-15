@@ -1,0 +1,32 @@
+@inherits UmbracoViewPage<PatentVista.Models.MenuModel>
+
+@{
+   Layout = null;
+}
+
+<div id="articlemenu"> 
+    <ul class="navmenu">
+
+        @foreach (var category in Model.GetCategories())
+        {
+            <li><b>@category.Name</b>
+                <ul>
+                    @foreach (var article in category.Items)
+                    {
+                        <li><a href="@article.Url()">@article.GetProperty("paginaTitel").Value</a></li>    
+                    }
+                </ul>
+            </li>
+        }
+    </ul>
+    <ul class="navmenu">
+        <li>
+            <a href="@Model.CostPage.Url">@Model.CostPage.GetProperty("paginaTitel").Value</a>
+        </li>
+    </ul>
+    <ul class="navmenu">
+        <li>
+            <a href="@Model.ContactPage.Url">@Model.ContactPage.GetProperty("paginaTitel").Value</a>
+        </li>
+    </ul>
+</div>

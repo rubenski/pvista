@@ -1,0 +1,16 @@
+﻿@inherits UmbracoViewPage<PatentVista.Models.LanguageBarModel>
+
+@{
+   Layout = null;
+}
+
+<ul>
+    @foreach (var barItem in Model.BarItems)
+    {
+        <li>
+            <a href="@barItem.Homepage.Url()">
+                <img src="@barItem.GetImage().Url" width="@barItem.GetImage().Width" height="@barItem.GetImage().Height" alt="@barItem.GetImage().AltText"/>
+            </a>
+        </li>
+    }
+</ul>

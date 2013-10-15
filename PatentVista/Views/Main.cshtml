@@ -1,0 +1,44 @@
+﻿@inherits UmbracoTemplatePage
+@{
+    Layout = null;
+}
+
+<!doctype html>
+<html>
+<head>
+    <title>
+        @RenderSection("title", false) 
+    </title>
+    <link rel="stylesheet" href="/css/custom-styles.css" type="text/css" />
+
+    @RenderSection("optionalJs", false) 
+    
+    <meta name="keywords" content="@Umbraco.Field("metaKeywords")">
+    <meta name="description" content="@Umbraco.Field("metaDescription")">
+</head>
+<body>
+    <div id="top">
+        <div id="header">
+            <a href="@Model.Content.AncestorOrSelf("Homepage").Url"><img src="/static/img/logo.jpg" alt="PatentVista"/></a>
+        </div>
+    </div>
+    <div id="contentwrapper">
+        <div id="languagebar">
+            
+            @* Render de balk met vlaggetjes *@
+            @Html.Action("Render", "LanguageBar")
+
+        </div>
+        
+        @* Render het navigatie menu *@
+        @Html.Action("Render", "NavMenu")
+
+        <div id="body">
+            
+            @*Render de body content *@
+            @RenderBody()
+
+        </div>
+    </div>
+</body>
+</html>

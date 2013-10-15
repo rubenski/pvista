@@ -1,0 +1,75 @@
+﻿@using PatentVista.Controllers
+@inherits UmbracoViewPage<PatentVista.Models.ContactFormModel>
+
+
+<div class="textcolumn">
+    @Umbraco.Field("text")
+</div>
+<div class="textcolumn">
+  
+    @using (Html.BeginUmbracoForm<ContactFormController>("Submit", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+       
+        <table class="formtable">
+            <tr>
+                <td>@Umbraco.GetDictionaryValue("Naam")</td>
+                <td>
+                    @Html.TextBoxFor(x => Model.RealName, new { maxlength = 30, size = 31})
+                    @Html.ValidationMessageFor(model => Model.RealName)
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    @Umbraco.GetDictionaryValue("Email")
+                </td>
+                <td>
+                    @Html.TextBoxFor(x => Model.RealEmail, new { maxlength = 30, size = 31})
+                    @Html.ValidationMessageFor(model => Model.RealEmail)
+                </td>
+            </tr>
+
+            <tr class="hide">
+                <td>
+                    @Umbraco.GetDictionaryValue("Email")
+                </td>
+                <td>
+                    @Html.TextBoxFor(x => Model.Email, new { maxlength = 30, size = 31})
+                </td>
+            </tr>
+
+            <tr class="hide">
+                <td>
+                    @Umbraco.GetDictionaryValue("Naam")
+                </td>
+                <td>
+                    @Html.TextBoxFor(x => Model.Name, new { maxlength = 30, size = 31})
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    @Umbraco.GetDictionaryValue("Onderwerp")
+                </td>
+                <td>
+                    @Html.TextBoxFor(x => Model.Subject, new { maxlength = 30, size = 31})
+                    @Html.ValidationMessageFor(model => Model.Subject)
+                </td>
+            </tr>
+
+            <tr>
+                <td>@Umbraco.GetDictionaryValue("Bericht")</td>
+                <td>
+                    @Html.TextAreaFor(x => Model.Message, new { @cols = 25, @rows = 10 })
+                    @Html.ValidationMessageFor(model => Model.Message)
+                </td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td><input type="submit" value="Verzenden" /></td>
+            </tr>
+        
+        </table>
+    }
+</div>

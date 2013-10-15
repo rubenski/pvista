@@ -1,0 +1,22 @@
+﻿@using PatentVista.Models
+@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    Layout = "Main.cshtml";
+}
+
+<h1>Contact</h1>
+
+@Html.Partial("ContactForm", new ContactFormModel())
+
+@Ajax.ActionLink("Get", "CountryData", new AjaxOptions {OnSuccess="somemethod"})
+
+@section optionalJs
+{
+    <script type="text/javascript" src="/static/js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="/static/js/custom.js" ></script>
+}
+
+@section title
+{
+    @Umbraco.Field("browserTitel")
+}
