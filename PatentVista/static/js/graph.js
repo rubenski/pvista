@@ -22,6 +22,21 @@ function loadGraph() {
     }
     
     var landId = $("#landId").text();
+    var language = $("html").attr("lang");
+
+    var legendText = "";
+
+    $.ajax(
+        {        
+            url: siteBaseUrl + "/dictionary-service?lang=" + language + "&key=Grafiekuitleg",
+            type: "get",
+            datatype: "json",
+            success: function(grafiekuitleg) {
+
+                alert(grafiekUitleg);
+
+            }
+        });
 
     $.ajax({
         url: siteBaseUrl + "/country-data-service?landId=" + landId + "&currency=" + currency,

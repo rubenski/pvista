@@ -249,6 +249,8 @@
     <Compile Include="Controllers\ContactFormController.cs" />
     <Compile Include="Controllers\CountryDataController.cs" />
     <Compile Include="Controllers\CurrencyUpdaterController.cs" />
+    <Compile Include="Controllers\DicionaryServiceController.cs" />
+    <Compile Include="Controllers\LanguageAttribController.cs" />
     <Compile Include="Controllers\LanguageBarController.cs" />
     <Compile Include="Controllers\NavMenuController.cs" />
     <Compile Include="Global.asax.cs">
@@ -400,6 +402,7 @@
     <Content Include="Views\WebService.cshtml" />
     <Content Include="Views\CurrencyUpdater.cshtml" />
     <Content Include="Views\CountryDataService.cshtml" />
+    <Content Include="Views\DictionaryService.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -8,10 +8,15 @@
 
 <h1>@Umbraco.GetDictionaryValue("Patentkosten") @Model.Content.Name</h1>
 
-<div id="currencyswitch">
-    <input name="currency" id="euro" type="radio" value="euro"/><label for="euro">euro</label>
-    <input name="currency" id="dollar" type="radio" value="dollar"/><label for="dollar">dollar</label>
-</div>
+<div id="graph-legend">
+    <div>
+        <input name="currency" id="euro" type="radio" value="euro"/><label for="euro">euro</label>
+        <input name="currency" id="dollar" type="radio" value="dollar"/><label for="dollar">dollar</label>
+    </div>
+    <div>
+        <span id="legend-text"></span>
+    </div>
+</div>  
 
 
 <canvas id="myChart" width="600" height="400"></canvas>

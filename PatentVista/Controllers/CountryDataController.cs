@@ -24,6 +24,15 @@ namespace PatentVista.Controllers
             var landIdString = Request.Params.Get("landId");
             var currency = Request.Params.Get("currency");
 
+            double multiplier = 1.0;
+     
+            if (currency.Equals("dollar"))
+            {
+                var rateString = PvSettings.Get("euroDollarRate");
+                var replaced = rateString.Replace(".", ",");
+                multiplier = Convert.ToDouble(replaced);
+            }
+
             if (landIdString == null)
             {
                 return HttpNotFound();
@@ -36,7 +45,7 @@ namespace PatentVista.Controllers
             string vulkleur = PvSettings.Get("grafiekenVulkleur");
             string lijnkleur = PvSettings.Get("grafiekenLijnkleur");
 
-            var resultData = new ResultData(vulkleur, lijnkleur);
+            var resultData = new ResultData(vulkleur, lijnkleur, multiplier);
 
             AddCountryToDataSet(resultData, land);
 
@@ -61,16 +70,28 @@ namespace PatentVista.Controllers
 
         public class ResultData
         {
-            public int MaxTakse { get; set; }
-            private readonly DataSet _dataSet;
-            private readonly Dictionary<int, string> _labels = new Dictionary<int, string>();
+            private readonly double _multiplier;
 
-            public ResultData(string fillColor, string lineColor)
+            public int MaxTakse     
             {
-                _dataSet = new DataSet(fillColor, lineColor);
+                get { return _maxTakse; }
+                set
+                {
+                    _maxTakse = (int) Math.Round(value * _multiplier);
+                }
             }
 
-            
+            private readonly DataSet _dataSet;
+            private readonly Dictionary<int, string> _labels = new Dictionary<int, string>();
+            private int _maxTakse;
+
+            public ResultData(string fillColor, string lineColor, double multiplier)
+            {
+                _multiplier = multiplier;
+                _dataSet = new DataSet(fillColor, lineColor, multiplier);
+            }
+
+
             public IList<string> labels
             {
                 get
@@ -107,11 +128,13 @@ namespace PatentVista.Controllers
  
             public string fillColor;
             public string strokeColor;
+            private double _multiplier;
 
-            public DataSet(string fillColor, string strokeColor)
+            public DataSet(string fillColor, string strokeColor, double multiplier)
             {
                 this.fillColor = fillColor;
                 this.strokeColor = strokeColor;
+                _multiplier = multiplier;
             }
 
             public List<int> data
@@ -127,15 +150,16 @@ namespace PatentVista.Controllers
 
             public void AddDataPoint(int jaarNummer, int takse)
             {
+                int takseValue = (int) Math.Round(takse*_multiplier);
                 int jaar;
                 bool b = _data.TryGetValue(jaarNummer, out jaar);
                 if (b)
                 {
-                    jaar += takse;
+                    jaar += takseValue;
                 }
                 else
                 {
-                    _data.Add(jaarNummer, takse);    
+                    _data.Add(jaarNummer, takseValue);    
                 }
             }
         }
