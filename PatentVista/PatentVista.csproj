@@ -20,6 +20,7 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -29,6 +30,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -37,6 +39,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="businesslogic">
@@ -106,6 +109,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Data.Entity" />
     <Reference Include="System.Data.SqlServerCe, Version=4.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
       <Private>True</Private>
@@ -124,8 +128,7 @@
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Web.Helpers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>
       <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.Helpers.dll</HintPath>
@@ -156,9 +159,7 @@
       <Private>True</Private>
       <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.WebPages.Razor.dll</HintPath>
     </Reference>
-    <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Web" />
-    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Web.Abstractions" />
     <Reference Include="System.Web.Routing" />
     <Reference Include="System.Xml" />
@@ -185,6 +186,7 @@
     <Reference Include="System.Web.Providers">
       <HintPath>..\packages\Microsoft.AspNet.Providers.Core.1.2\lib\net40\System.Web.Providers.dll</HintPath>
     </Reference>
+    <Reference Include="System.Xml.Linq" />
     <Reference Include="TidyNet">
       <HintPath>..\packages\UmbracoCms.Core.6.1.6\lib\TidyNet.dll</HintPath>
     </Reference>
@@ -236,12 +238,14 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Business\CurrencyUpdater.cs" />
+    <Compile Include="Business\DataImporter.cs" />
     <Compile Include="Business\Exception\MissingPropertyException.cs" />
     <Compile Include="Business\Exception\MissingValueException.cs" />
     <Compile Include="Business\HomepageHelper.cs" />
     <Compile Include="Business\Mail\EmailMessage.cs" />
     <Compile Include="Business\Mail\MailHelper.cs" />
     <Compile Include="Business\Mail\EmailAddress.cs" />
+    <Compile Include="Business\OpenExchangeRatesUpdater.cs" />
     <Compile Include="Business\PvNodes.cs" />
     <Compile Include="Business\PVSettings.cs" />
     <Compile Include="Business\UmbracoFieldHelper.cs" />
@@ -249,7 +253,7 @@
     <Compile Include="Controllers\ContactFormController.cs" />
     <Compile Include="Controllers\CountryDataController.cs" />
     <Compile Include="Controllers\CurrencyUpdaterController.cs" />
-    <Compile Include="Controllers\DicionaryServiceController.cs" />
+    <Compile Include="Controllers\DictionaryServiceController.cs" />
     <Compile Include="Controllers\LanguageAttribController.cs" />
     <Compile Include="Controllers\LanguageBarController.cs" />
     <Compile Include="Controllers\NavMenuController.cs" />
@@ -262,6 +266,11 @@
     <Compile Include="Models\ArticleCategory.cs" />
     <Compile Include="Models\MenuModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
@@ -343,6 +352,10 @@
     <Content Include="config\BaseRestExtensions.config" />
     <Content Include="config\applications.config" />
     <Content Include="config\404handlers.config" />
+    <Content Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </Content>
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
     <Content Include="macroScripts\dummy.txt" />
     <Content Include="masterpages\dummy.txt" />
@@ -403,6 +416,7 @@
     <Content Include="Views\CurrencyUpdater.cshtml" />
     <Content Include="Views\CountryDataService.cshtml" />
     <Content Include="Views\DictionaryService.cshtml" />
+    <Content Include="Views\DataImporter.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

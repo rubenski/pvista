@@ -33,7 +33,7 @@ function loadGraph() {
             datatype: "json",
             success: function(grafiekuitleg) {
 
-                alert(grafiekUitleg);
+       
 
             }
         });

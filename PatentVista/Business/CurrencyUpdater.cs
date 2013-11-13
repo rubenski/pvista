@@ -22,7 +22,7 @@ namespace PatentVista.Business
 
             var contentService = ApplicationContext.Current.Services.ContentService;
 
-            IContent settings = contentService.GetRootContent().First(x => x.ContentType.Alias.Equals("Settings"));
+            IContent settings = PvNodes.GetSettings();
 
             foreach (var rate in rates)
             {

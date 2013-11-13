@@ -747,4 +747,33 @@
       <file name="/umbraco_client/tabview/style.css" />
     </files>
   </item>
+  <item key="L3VtYnJhY29fY2xpZW50L0RpYWxvZ3MvUHVibGlzaERpYWxvZy5jc3M7L3VtYnJhY29fY2xpZW50L3VpL2RlZmF1bHQuY3NzOw" file="C:\Projects\Patentvista Umbraco 6\PatentVista\PatentVista\App_Data\TEMP\ClientDependency\2_08ddfdfd9a40429bb786f8945b1595aa.cdC" compression="gzip" version="2">
+    <files>
+      <file name="/umbraco_client/Dialogs/PublishDialog.css" />
+      <file name="/umbraco_client/ui/default.css" />
+    </files>
+  </item>
+  <item key="L3VtYnJhY29fY2xpZW50L0FwcGxpY2F0aW9uL05hbWVzcGFjZU1hbmFnZXIuanM7L3VtYnJhY29fY2xpZW50L3VpL2pxdWVyeS5qczsvdW1icmFjb19jbGllbnQvdWkvYmFzZTIuanM7L3VtYnJhY29fY2xpZW50L0FwcGxpY2F0aW9uL1VtYnJhY29DbGllbnRNYW5hZ2VyLmpzOy91bWJyYWNvX2NsaWVudC9VSS9rbm9ja291dC5qczsvdW1icmFjb19jbGllbnQvVUkva25vY2tvdXQubWFwcGluZy5qczsvdW1icmFjb19jbGllbnQvdWkvZGVmYXVsdC5qczsvdW1icmFjby9qcy91bWJyYWNvQ2hlY2tLZXlzLmpzOy91bWJyYWNvX2NsaWVudC9EaWFsb2dzL1B1Ymxpc2hEaWFsb2cuanM7" file="C:\Projects\Patentvista Umbraco 6\PatentVista\PatentVista\App_Data\TEMP\ClientDependency\2_82184c1d98da4b93b43e3d673cd8861e.cdJ" compression="gzip" version="2">
+    <files>
+      <file name="/umbraco_client/Application/NamespaceManager.js" />
+      <file name="/umbraco_client/ui/jquery.js" />
+      <file name="/umbraco_client/ui/base2.js" />
+      <file name="/umbraco_client/Application/UmbracoClientManager.js" />
+      <file name="/umbraco_client/UI/knockout.js" />
+      <file name="/umbraco_client/UI/knockout.mapping.js" />
+      <file name="/umbraco_client/ui/default.js" />
+      <file name="/umbraco/js/umbracoCheckKeys.js" />
+      <file name="/umbraco_client/Dialogs/PublishDialog.js" />
+    </files>
+  </item>
+  <item key="L3VtYnJhY29fY2xpZW50L3VpL2RlZmF1bHQuY3NzOy91bWJyYWNvX2NsaWVudC9tb2RhbC9zdHlsZS5jc3M7L3VtYnJhY29fY2xpZW50L21lbnVpY29uL3N0eWxlLmNzczsvdW1icmFjb19jbGllbnQvcHJvcGVydHlwYW5lL3N0eWxlLmNzczsvdW1icmFjb19jbGllbnQvc2Nyb2xsaW5nbWVudS9zdHlsZS5jc3M7L3VtYnJhY29fY2xpZW50L3RhYnZpZXcvc3R5bGUuY3NzOw" file="C:\Projects\Patentvista Umbraco 6\PatentVista\PatentVista\App_Data\TEMP\ClientDependency\2_44c8475e179a46109f9b47c8dc1d532a.cdC" compression="gzip" version="2">
+    <files>
+      <file name="/umbraco_client/ui/default.css" />
+      <file name="/umbraco_client/modal/style.css" />
+      <file name="/umbraco_client/menuicon/style.css" />
+      <file name="/umbraco_client/propertypane/style.css" />
+      <file name="/umbraco_client/scrollingmenu/style.css" />
+      <file name="/umbraco_client/tabview/style.css" />
+    </files>
+  </item>
 </map>
