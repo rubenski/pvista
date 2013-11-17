@@ -1,17 +1,27 @@
-﻿@inherits UmbracoTemplatePage
+﻿@using PatentVista.Models
+@using Umbraco.Web.Media.EmbedProviders.Settings
+@using umbraco.cms.businesslogic.web
+@using String = System.String
+@inherits UmbracoTemplatePage
 @{
     Layout = "Main.cshtml";
 }
 
 <span id="siteBaseUrl" class="hide">@Model.Content.AncestorOrSelf(1).Sibling("Settings").GetProperty("siteBaseUrl").Value</span>
-<span id="landId" class="hide">@Model.Content.GetProperty("kostenland").Value</span>
+<span id="landId" class="hide">@Umbraco.Field("kostenland")</span>
+<span id="languageCode" class="hide">@Domain.GetDomainsById(Model.Content.AncestorOrSelf(1).Id)[0].Language.CultureAlias;</span>
 
 <h1>@Umbraco.GetDictionaryValue("Patentkosten") @Model.Content.Name</h1>
 
+
+<p>@Umbraco.Field("omschrijving")</p>
+
+
 <div id="graph-legend">
     <div>
-        <input name="currency" id="euro" type="radio" value="euro"/><label for="euro">euro</label>
-        <input name="currency" id="dollar" type="radio" value="dollar"/><label for="dollar">dollar</label>
+        <input name="currency" id="CNY" type="radio" value="CNY"/><label for="CNY">yuan</label>
+        <input name="currency" id="EUR" type="radio" value="EUR"/><label for="EUR">euro</label>
+        <input name="currency" id="USD" type="radio" value="USD"/><label for="USD">dollar</label>
     </div>
     <div>
         <span id="legend-text"></span>
@@ -19,11 +29,12 @@
 </div>  
 
 
-<canvas id="myChart" width="600" height="400"></canvas>
+<canvas id="myChart" width="620" height="400"></canvas>
 
-<p>@Umbraco.Field("omschrijving")</p>
 
-<span id="landid" class="hide">@Umbraco.Field("kostenland")</span>
+@Html.Action("Index", "ExtraCost", new { area = string.Empty })
+
+
 
 @section title
 {
@@ -33,6 +44,7 @@
 @section optionalJs
 {
     <script type="text/javascript" src="/static/js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="/static/js/jquery.cookie.js"></script>
     <script src="/static/js/Chart.js"></script>
     <script src="/static/js/custom.js"></script>
     <script src="/static/js/graph.js"></script>

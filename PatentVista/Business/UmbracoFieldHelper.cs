@@ -33,7 +33,7 @@ namespace PatentVista.Business
 
             if (property.ToString().Equals(""))
             {
-                throw new MissingValueException(String.Format("No {0} found on item titled '{1}'.", field, page.Name));
+                throw new PatentVistaMissingValueException(String.Format("No {0} found on item titled '{1}'.", field, page.Name));
             }
 
             int linkedPageId = Convert.ToInt32(property.Value);
@@ -51,11 +51,34 @@ namespace PatentVista.Business
 
             if (intProperty.Value.ToString().Equals(""))
             {
-                throw new MissingValueException(String.Format("No value for {0} found on item titled '{1}'.", field, page.Name));
+                throw new PatentVistaMissingValueException(String.Format("No value for {0} found on item titled '{1}'.", field, page.Name));
             }
 
             return Convert.ToInt32(intProperty.Value);
         }
+
+        public static int? GetIntField(IPublishedContent page, string field)
+        {
+            IPublishedContentProperty intProperty = GetProperty(page, field);
+            if (intProperty.Value == null || intProperty.Value == "")
+            {
+                return null;
+            }
+            return Convert.ToInt32(intProperty.Value);
+        }
+
+        public static string GetRequiredStringField(IPublishedContent page, string field)
+        {
+            IPublishedContentProperty stringProperty = GetProperty(page, field);
+
+            if (stringProperty.Value.ToString().Equals(""))
+            {
+                throw new PatentVistaMissingValueException(String.Format("No value for {0} found on item titled '{1}'.", field, page.Name));
+            }
+
+            return stringProperty.Value.ToString();
+        }
+
 
 
         private static IPublishedContentProperty GetProperty(IPublishedContent page, string field)
@@ -66,7 +89,7 @@ namespace PatentVista.Business
             var property = page.GetProperty(field);
             if (property == null)
             {
-                throw new MissingPropertyException(String.Format("Missing property {0} on item titled {1}", field, page.Name));
+                throw new PatentVistaMissingPropertyException(String.Format("Missing property {0} on item titled {1}", field, page.Name));
             }
 
             return property;

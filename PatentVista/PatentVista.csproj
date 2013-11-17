@@ -72,9 +72,6 @@
     <Reference Include="interfaces">
       <HintPath>..\packages\UmbracoCms.Core.6.1.6\lib\interfaces.dll</HintPath>
     </Reference>
-    <Reference Include="log4net">
-      <HintPath>..\packages\UmbracoCms.Core.6.1.6\lib\log4net.dll</HintPath>
-    </Reference>
     <Reference Include="Lucene.Net">
       <HintPath>..\packages\Lucene.Net.2.9.4.1\lib\net40\Lucene.Net.dll</HintPath>
     </Reference>
@@ -239,21 +236,25 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Business\CurrencyUpdater.cs" />
     <Compile Include="Business\DataImporter.cs" />
-    <Compile Include="Business\Exception\MissingPropertyException.cs" />
-    <Compile Include="Business\Exception\MissingValueException.cs" />
+    <Compile Include="Business\DictionaryHelper.cs" />
+    <Compile Include="Business\Exception\PatentVistaMissingPropertyException.cs" />
+    <Compile Include="Business\Exception\PatentVistaMissingValueException.cs" />
     <Compile Include="Business\HomepageHelper.cs" />
+    <Compile Include="Business\Languages.cs" />
     <Compile Include="Business\Mail\EmailMessage.cs" />
     <Compile Include="Business\Mail\MailHelper.cs" />
     <Compile Include="Business\Mail\EmailAddress.cs" />
     <Compile Include="Business\OpenExchangeRatesUpdater.cs" />
     <Compile Include="Business\PvNodes.cs" />
     <Compile Include="Business\PVSettings.cs" />
+    <Compile Include="Business\CurrencyHelper.cs" />
     <Compile Include="Business\UmbracoFieldHelper.cs" />
     <Compile Include="Business\UmbracoImage.cs" />
     <Compile Include="Controllers\ContactFormController.cs" />
     <Compile Include="Controllers\CountryDataController.cs" />
     <Compile Include="Controllers\CurrencyUpdaterController.cs" />
     <Compile Include="Controllers\DictionaryServiceController.cs" />
+    <Compile Include="Controllers\ExtraCostController.cs" />
     <Compile Include="Controllers\LanguageAttribController.cs" />
     <Compile Include="Controllers\LanguageBarController.cs" />
     <Compile Include="Controllers\NavMenuController.cs" />
@@ -261,6 +262,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\ContactFormModel.cs" />
+    <Compile Include="Models\CountryCost.cs" />
     <Compile Include="Models\LanguageBarItem.cs" />
     <Compile Include="Models\LanguageBarModel.cs" />
     <Compile Include="Models\ArticleCategory.cs" />
@@ -382,7 +384,9 @@
     <Content Include="static\js\graph.js" />
     <Content Include="static\js\jquery-1.10.2.min.js" />
     <Content Include="usercontrols\dummy.txt" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -417,6 +421,7 @@
     <Content Include="Views\CountryDataService.cshtml" />
     <Content Include="Views\DictionaryService.cshtml" />
     <Content Include="Views\DataImporter.cshtml" />
+    <Content Include="Views\Shared\ExtraCost.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -19,11 +19,26 @@ namespace PatentVista.Business
             return new Node(-1);
         }
 
+        public static IContent GetHomePage(String language)
+        {
+            var contentService = ApplicationContext.Current.Services.ContentService;
+            IContent item = contentService.GetRootContent().First(x => x.Language.Equals(language));
+            return item;    
+        }
+
         public static IContent GetSettings()
         {
             var contentService = ApplicationContext.Current.Services.ContentService;
             IContent settings = contentService.GetRootContent().First(x => x.ContentType.Alias.Equals("Settings"));
             return settings;
         }
+
+        public static IContent GetRootContentNodeByName(String name)
+        {
+            var contentService = ApplicationContext.Current.Services.ContentService;
+            return contentService.GetRootContent().First(x => x.Name.Equals(name));
+        }
+
+        
     }
 }

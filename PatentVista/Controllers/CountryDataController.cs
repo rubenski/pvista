@@ -1,71 +1,83 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Net;
-using System.Web.Http;
 using System.Web.Mvc;
 using PatentVista.Business;
+using PatentVista.Models;
+using Umbraco.Core;
 using Umbraco.Core.Models;
 using Umbraco.Web;
 using Umbraco.Web.Mvc;
+using umbraco.cms.businesslogic.web;
+using Language = umbraco.cms.businesslogic.language.Language;
 
 
 namespace PatentVista.Controllers
 {
     public class CountryDataController : SurfaceController
     {
-
-
         //
         // GET: /CountryData/
 
-        public ActionResult Get() 
+        public ActionResult Get()
         {
-            var landIdString = Request.Params.Get("landId");
+            
+            var kostenLandIdString = Request.Params.Get("landId");
             var currency = Request.Params.Get("currency");
+            var langCode = Request.Params.Get("lang");
 
-            double multiplier = 1.0;
-     
-            if (currency.Equals("dollar"))
-            {
-                var rateString = PvSettings.Get("euroDollarRate");
-                var replaced = rateString.Replace(".", ",");
-                multiplier = Convert.ToDouble(replaced);
-            }
+            int landId = Convert.ToInt32(kostenLandIdString);
 
-            if (landIdString == null)
+            if (kostenLandIdString == null || currency == null)
             {
                 return HttpNotFound();
             }
 
-            int landId = Convert.ToInt32(landIdString);
-
-            var land = Umbraco.TypedContent(landId);
-
             string vulkleur = PvSettings.Get("grafiekenVulkleur");
             string lijnkleur = PvSettings.Get("grafiekenLijnkleur");
 
-            var resultData = new ResultData(vulkleur, lijnkleur, multiplier);
+            var resultData = new ResultData(vulkleur, lijnkleur, 1.0);
 
-            AddCountryToDataSet(resultData, land);
+            var landkosten = Umbraco.TypedContent(landId);
+
+            AddCountryToDataSet(resultData, landkosten, currency, DictionaryHelper.ItemForKeyAndLanguage("Jaar", langCode));
 
             return Json(resultData, JsonRequestBehavior.AllowGet);
+            
+           
         }
 
-        private void AddCountryToDataSet(ResultData resultData, IPublishedContent land)
+        private void AddCountryToDataSet(ResultData resultData, IPublishedContent landkosten, string goalCurrency, String localizedYear)
         {
+
+            var kostenland = new CountryCost(landkosten, goalCurrency);
 
             for (int i = 1; i <= 20; i++)
             {
-                var value = land.GetProperty(string.Format("jaar{0}", i)).Value;
-                int takse = Convert.ToInt32(value);
 
-                if (takse > resultData.MaxTakse)
+                int jaarTakseInGoalCurrency = kostenland.GetYear(i) ?? default(int);
+
+                if (jaarTakseInGoalCurrency > resultData.MaxTakse)
                 {
-                    resultData.MaxTakse = takse;
+                    resultData.MaxTakse = jaarTakseInGoalCurrency;
                 }
-                resultData.AddDataPoint(i, takse);
+
+                resultData.AddDataPoint(i, jaarTakseInGoalCurrency, localizedYear);
             }
+
+            string stepWidthString = (resultData.MaxTakse / 10).ToString();
+            int biggestInt = Convert.ToInt32(stepWidthString[0].ToString()) + 1;
+            string nextBigNumberforStep = biggestInt.ToString();
+
+            for (int i = 0; i < stepWidthString.Length - 1; i++)
+            {
+                nextBigNumberforStep += "0";
+            }
+
+            int nextBigNumberForStepInt = Convert.ToInt32(nextBigNumberforStep);
+            resultData.StepWidth = nextBigNumberForStepInt;
+
+
         }
 
         public class ResultData
@@ -80,6 +92,8 @@ namespace PatentVista.Controllers
                     _maxTakse = (int) Math.Round(value * _multiplier);
                 }
             }
+
+            public int StepWidth { get; set; }
 
             private readonly DataSet _dataSet;
             private readonly Dictionary<int, string> _labels = new Dictionary<int, string>();
@@ -111,9 +125,9 @@ namespace PatentVista.Controllers
             }
 
 
-            public void AddDataPoint(int jaarNummer, int takse)
+            public void AddDataPoint(int jaarNummer, int takse, string localizedYear)
             {
-                _labels.Add(jaarNummer, string.Format("Jaar {0}", jaarNummer));
+                _labels.Add(jaarNummer, string.Format("{0} {1}", localizedYear, jaarNummer));
                 _dataSet.AddDataPoint(jaarNummer, takse);
             }
 

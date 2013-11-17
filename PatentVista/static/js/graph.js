@@ -1,20 +1,28 @@
-﻿$(document).ready(function() {
-
-    $("#euro").attr("checked", true);
+﻿$(document).ready(function() {    
     
-    loadGraph();
+    
+    var currentCurrency = $.cookie("PvSettings");
+    if (currentCurrency == undefined) {
+        currentCurrency = "EUR";
+    }
+    checkCurrentCurrency(currentCurrency);
+    loadGraph(currentCurrency);
 
-    $("input[name='currency']:radio").change(function() {
-        loadGraph();
+    $("input[name='currency']:radio").change(function () {
+        var currency = $(this).val();
+        window.location = "?currency=" + currency;
+        $.cookie('PvSettings', currency, { expires: 30, path: '/' });
     });
 
 });
 
 
+function checkCurrentCurrency(currentCurrency) {
+    $("#" + $.trim(currentCurrency)).prop('checked', true);
+}
 
-function loadGraph() {
 
-    var currency = $("input[name='currency']:checked").val();
+function loadGraph(currentCurrency) {
 
     var siteBaseUrl = $("#siteBaseUrl").text();
     if (siteBaseUrl.charAt(siteBaseUrl.length - 1) == "/") {
@@ -22,48 +30,44 @@ function loadGraph() {
     }
     
     var landId = $("#landId").text();
+
     var language = $("html").attr("lang");
 
-    var legendText = "";
-
+    var grafiekUitlegServiceUrl = siteBaseUrl + "/dictionary-service?lang=" + language + "&key=Grafiekuitleg";
+    
     $.ajax(
         {        
-            url: siteBaseUrl + "/dictionary-service?lang=" + language + "&key=Grafiekuitleg",
+            url: grafiekUitlegServiceUrl,
             type: "get",
             datatype: "json",
             success: function(grafiekuitleg) {
-
-       
-
             }
         });
 
+    var dataServiceUrl = siteBaseUrl + "/country-data-service?landId=" + landId + "&currency=" + currentCurrency + "&lang=" + language;
+
+    
     $.ajax({
-        url: siteBaseUrl + "/country-data-service?landId=" + landId + "&currency=" + currency,
+        url: dataServiceUrl,
         type: "get",
         dataType: "html",
         success: function (result) {
 
+            
             result = result.trim();
 
             result = result.substring(0, result.length - 1);
+
             var data = $.parseJSON(result);
-
-            var maxTakse = data.MaxTakse;
-
-            var steps = Math.ceil(maxTakse / 100);
             
-            if (steps < 5) {
-                steps = 5;
-            }
-            
+    
             var options = {
                 
                 scaleOverlay: true,
                 scaleShowGridLines: true,
                 scaleOverride: true,
-                scaleSteps: steps,
-                scaleStepWidth: 100,
+                scaleSteps: 10,
+                scaleStepWidth: data.StepWidth,
                 scaleStartValue: 0,
                 scaleLineColor: "rgba(0,0,0,.1)",
                 scaleLineWidth: 1,
@@ -75,9 +79,8 @@ function loadGraph() {
             };
             
             var ctx = $("#myChart").get(0).getContext("2d");
-            //This will get the first returned node in the jQuery collection.
             new Chart(ctx).Bar(data, options);
-            
+
         },
         error: function(xhr, status, error) {
             alert(status + " : " + error);

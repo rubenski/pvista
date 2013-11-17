@@ -13,7 +13,7 @@
                 <ul>
                     @foreach (var article in category.Items)
                     {
-                        <li><a href="@article.Url()">@article.GetProperty("paginaTitel").Value</a></li>    
+                        <li><a href="@article.Url()">@article.Name</a></li>    
                     }
                 </ul>
             </li>
