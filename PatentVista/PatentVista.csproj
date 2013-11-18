@@ -254,7 +254,7 @@
     <Compile Include="Controllers\CountryDataController.cs" />
     <Compile Include="Controllers\CountryListingSurfaceController.cs" />
     <Compile Include="Controllers\CurrencyUpdaterController.cs" />
-    <Compile Include="Controllers\DictionaryServiceController.cs" />
+    <Compile Include="Controllers\DictionaryServiceSurfaceController.cs" />
     <Compile Include="Controllers\ExtraCostController.cs" />
     <Compile Include="Controllers\LanguageAttribController.cs" />
     <Compile Include="Controllers\LanguageBarController.cs" />

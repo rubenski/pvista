@@ -13,22 +13,15 @@
 
 <h1>@Umbraco.GetDictionaryValue("Patentkosten") @Model.Content.Name</h1>
 
-
 <p>@Umbraco.Field("omschrijving")</p>
+  
+<div id="currency-buttons">
+    <input name="currency" id="CNY" type="radio" value="CNY"/><label for="CNY">yuan</label>
+    <input name="currency" id="EUR" type="radio" value="EUR"/><label for="EUR">euro</label>
+    <input name="currency" id="USD" type="radio" value="USD"/><label for="USD">dollar</label>
+</div>
 
-
-<div id="graph-legend">
-    <div>
-        <input name="currency" id="CNY" type="radio" value="CNY"/><label for="CNY">yuan</label>
-        <input name="currency" id="EUR" type="radio" value="EUR"/><label for="EUR">euro</label>
-        <input name="currency" id="USD" type="radio" value="USD"/><label for="USD">dollar</label>
-    </div>
-    <div>
-        <span id="legend-text"></span>
-    </div>
-</div>  
-
-
+<div id="graph-explanation"><strong>@Umbraco.GetDictionaryValue("Patenttaksen voor") @Model.Content.Name</strong></div>
 <canvas id="myChart" width="620" height="400"></canvas>
 
 

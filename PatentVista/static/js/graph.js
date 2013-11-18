@@ -30,20 +30,7 @@ function loadGraph(currentCurrency) {
     }
     
     var landId = $("#landId").text();
-
     var language = $("html").attr("lang");
-
-    var grafiekUitlegServiceUrl = siteBaseUrl + "/dictionary-service?lang=" + language + "&key=Grafiekuitleg";
-    
-    $.ajax(
-        {        
-            url: grafiekUitlegServiceUrl,
-            type: "get",
-            datatype: "json",
-            success: function(grafiekuitleg) {
-            }
-        });
-
     var dataServiceUrl = siteBaseUrl + "/country-data-service?landId=" + landId + "&currency=" + currentCurrency + "&lang=" + language;
 
     
@@ -52,14 +39,10 @@ function loadGraph(currentCurrency) {
         type: "get",
         dataType: "html",
         success: function (result) {
-
             
             result = result.trim();
-
             result = result.substring(0, result.length - 1);
-
             var data = $.parseJSON(result);
-            
     
             var options = {
                 
