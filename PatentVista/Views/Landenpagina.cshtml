@@ -1,4 +1,5 @@
-﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+﻿@using PatentVista.Controllers
+@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
 @{
     Layout = "Main.cshtml";
 }
@@ -6,13 +7,9 @@
 <h1>@Umbraco.Field("paginatitel")</h1>
 
 <p>@Umbraco.Field("korteIntro")</p>
-<ul class="navmenu">
-    @foreach (var page in @Model.Content.AncestorOrSelf("Homepage").Descendants("Land").OrderBy(x => x.Name))
-    {
-        <li><a href="@page.Url">@page.Name</a></li>    
-    }
-</ul>
 
+
+@Html.Action("Index", "CountryListingSurface", new {Area= "CLC"})
 
 @section title
 {

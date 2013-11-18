@@ -252,6 +252,7 @@
     <Compile Include="Business\UmbracoImage.cs" />
     <Compile Include="Controllers\ContactFormController.cs" />
     <Compile Include="Controllers\CountryDataController.cs" />
+    <Compile Include="Controllers\CountryListingSurfaceController.cs" />
     <Compile Include="Controllers\CurrencyUpdaterController.cs" />
     <Compile Include="Controllers\DictionaryServiceController.cs" />
     <Compile Include="Controllers\ExtraCostController.cs" />
@@ -262,7 +263,10 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\ContactFormModel.cs" />
+    <Compile Include="Models\Continent.cs" />
     <Compile Include="Models\CountryCost.cs" />
+    <Compile Include="Models\LinkModel.cs" />
+    <Compile Include="Models\CountryListingModel.cs" />
     <Compile Include="Models\LanguageBarItem.cs" />
     <Compile Include="Models\LanguageBarModel.cs" />
     <Compile Include="Models\ArticleCategory.cs" />
@@ -422,6 +426,7 @@
     <Content Include="Views\DictionaryService.cshtml" />
     <Content Include="Views\DataImporter.cshtml" />
     <Content Include="Views\Shared\ExtraCost.cshtml" />
+    <Content Include="Views\Shared\CountryListing.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

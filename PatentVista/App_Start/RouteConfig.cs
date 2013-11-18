@@ -18,6 +18,7 @@ namespace PatentVista.App_Start
 
         protected void Application_Start()
         {
+            
             RegisterRoutes(RouteTable.Routes);
         }
     }
