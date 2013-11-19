@@ -239,6 +239,7 @@
     <Compile Include="Business\DictionaryHelper.cs" />
     <Compile Include="Business\Exception\PatentVistaMissingPropertyException.cs" />
     <Compile Include="Business\Exception\PatentVistaMissingValueException.cs" />
+    <Compile Include="Business\ExtensionMethods.cs" />
     <Compile Include="Business\HomepageHelper.cs" />
     <Compile Include="Business\Languages.cs" />
     <Compile Include="Business\Mail\EmailMessage.cs" />
