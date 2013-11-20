@@ -428,6 +428,9 @@
     <Content Include="Views\DataImporter.cshtml" />
     <Content Include="Views\Shared\ExtraCost.cshtml" />
     <Content Include="Views\Shared\CountryListing.cshtml" />
+    <Content Include="Views\Tweekolomspagina.cshtml" />
+    <Content Include="Views\Artikelenmap.cshtml" />
+    <Content Include="Views\Rubriek.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

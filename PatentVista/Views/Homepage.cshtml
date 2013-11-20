@@ -1,13 +1,13 @@
-﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+﻿@using PatentVista.Business
+@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
 @{
     Layout = "Main.cshtml";
 }
 
-
 <h1>@Model.Content.GetPropertyValue("paginatitel")</h1>
 
-<div class="textcolumn">@Model.Content.GetPropertyValue("introductieLinks")</div>
-<div class="textcolumn">@Model.Content.GetPropertyValue("introductieRechts")</div>
+<div class="textcolumn">@Model.Content.GetPropertyValue("tekstLinks").ToString().Adsensed()</div>
+<div class="textcolumn">@Model.Content.GetPropertyValue("tekstRechts")</div>
 
 @section title
 {

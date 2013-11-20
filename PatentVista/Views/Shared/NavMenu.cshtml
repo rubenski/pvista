@@ -4,26 +4,21 @@
    Layout = null;
 }
 
-<div id="articlemenu"> 
+<div id="articlemenu">
+    <b>@Umbraco.GetDictionaryValue("Rubrieken")</b> 
     <ul class="navmenu">
-
-        @foreach (var category in Model.GetCategories())
+        @foreach (var rubriek in Model.Rubrieken)
         {
-            <li><b>@category.Name</b>
-                <ul>
-                    @foreach (var article in category.Items)
-                    {
-                        <li><a href="@article.Url()">@article.Name</a></li>    
-                    }
-                </ul>
-            </li>
+            <li><a href="@rubriek.Url">@rubriek.Name</a></li>
         }
     </ul>
+    <b>@Umbraco.GetDictionaryValue("Kosten per land")</b>
     <ul class="navmenu">
         <li>
             <a href="@Model.CostPage.Url">@Model.CostPage.GetProperty("paginaTitel").Value</a>
         </li>
     </ul>
+    <b>@Umbraco.GetDictionaryValue("Overige")</b>
     <ul class="navmenu">
         <li>
             <a href="@Model.ContactPage.Url">@Model.ContactPage.GetProperty("paginaTitel").Value</a>
