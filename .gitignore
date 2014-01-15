@@ -6,6 +6,10 @@
 *.user
 *.sln.docstates
 
+# Added by ruben
+App_Data/**
+
+
 # Build results
 
 [Dd]ebug/

@@ -404,13 +404,8 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="xslt\dummy.txt" />
     <Content Include="xslt\Web.config" />
-    <Content Include="Views\Artikel.cshtml">
-      <SubType>Code</SubType>
-    </Content>
     <Content Include="Views\Homepage.cshtml" />
     <Content Include="Views\Main.cshtml" />
-    <Content Include="Views\Page.cshtml" />
-    <Content Include="Views\Sectie.cshtml" />
     <Content Include="static\img\logo.psd" />
     <Content Include="Views\Land.cshtml" />
     <Content Include="Views\Shared\NavMenu.cshtml">

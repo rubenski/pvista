@@ -5,10 +5,10 @@
 }
 
 <h1>@Model.Content.GetPropertyValue("paginatitel")</h1>
-
-<div class="textcolumn">@Model.Content.GetPropertyValue("tekstLinks").ToString().Adsensed()</div>
-<div class="textcolumn">@Model.Content.GetPropertyValue("tekstRechts")</div>
-
+<div id="textwrapper">
+	<div class="textcolumn">@Model.Content.GetPropertyValue("tekstLinks").ToString().Adsensed()</div>
+	<div class="textcolumn">@Model.Content.GetPropertyValue("tekstRechts")</div>
+</div>
 @section title
 {
     @Umbraco.GetDictionaryValue("Patentkosten") @Model.Content.Name

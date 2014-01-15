@@ -330,7 +330,7 @@ window.Chart = function(context){
 			scaleShowLabels : true,
 			scaleLabel : "<%=value%>",
 			scaleFontFamily : "'Arial'",
-			scaleFontSize : 12,
+			scaleFontSize : 11,
 			scaleFontStyle : "normal",
 			scaleFontColor : "#666",
 			scaleShowGridLines : true,
