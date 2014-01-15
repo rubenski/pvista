@@ -6,8 +6,6 @@
 <!doctype html>
 <html lang="@Html.Action("GetCurrentLanguage", "LanguageAttrib")">
 <head> 
-	
-   
 <title>
         @RenderSection("title", false) 
     </title>
@@ -15,6 +13,7 @@
     <link rel="stylesheet" href="/css/custom-styles.css" type="text/css" />
 
     @RenderSection("optionalJs", false) 
+    @RenderSection("canonical", false)
     
     <meta name="keywords" content="@Umbraco.Field("metaKeywords")">
     <meta name="description" content="@Umbraco.Field("metaDescription")">

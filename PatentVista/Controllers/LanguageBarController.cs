@@ -13,6 +13,11 @@ namespace PatentVista.Controllers
         {
             var currentHomePage = CurrentPage.AncestorOrSelf(1);
             var languageBarModel = new LanguageBarModel();
+
+            var test = CurrentPage;
+
+            IEnumerable<IContent> rootContent = ApplicationContext.Services.ContentService.GetRootContent();    
+
             IEnumerable<IPublishedContent> homepages = currentHomePage.Siblings().Where(x => x.DocumentTypeAlias.Equals("Homepage"));
 
             foreach (var homepage in homepages)

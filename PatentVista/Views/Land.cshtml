@@ -19,25 +19,34 @@ For convenience to our users all patent fees can be converted in either Euros, U
 <br><br>Exchange rates used to convert from local currencies to the currencies mentioned are refreshed every 3 hours. 	
 </p> 
 <div id="currency-buttons">
-    <input name="currency" id="EUR" type="radio" value="EUR"/><label for="EUR">@Umbraco.GetDictionaryValue("Euro")</label>
-    <input name="currency" id="USD" type="radio" value="USD"/><label for="USD">@Umbraco.GetDictionaryValue("Dollar")</label>
-	<input name="currency" id="JPY" type="radio" value="JPY"/><label for="JPY">@Umbraco.GetDictionaryValue("Yen")</label>
-	<input name="currency" id="CNY" type="radio" value="CNY"/><label for="CNY">@Umbraco.GetDictionaryValue("Yuan")</label>
-	<input name="currency" id="BRL" type="radio" value="BRL"/><label for="BRL">@Umbraco.GetDictionaryValue("Real")</label>
-	<input name="currency" id="INR" type="radio" value="INR"/><label for="INR">@Umbraco.GetDictionaryValue("Rupee")</label>
+    <input name="currency" id="EUR" type="radio" value="EUR"/><label for="EUR">@Umbraco.GetDictionaryValue("EUR")</label>
+    <input name="currency" id="USD" type="radio" value="USD"/><label for="USD">@Umbraco.GetDictionaryValue("USD")</label>
+    <input name="currency" id="JPY" type="radio" value="JPY"/><label for="JPY">@Umbraco.GetDictionaryValue("JPY")</label>
+    <input name="currency" id="CNY" type="radio" value="CNY"/><label for="CNY">@Umbraco.GetDictionaryValue("CNY")</label>
+    <input name="currency" id="BRL" type="radio" value="BRL"/><label for="BRL">@Umbraco.GetDictionaryValue("BRL")</label>
+    <input name="currency" id="INR" type="radio" value="INR"/><label for="INR">@Umbraco.GetDictionaryValue("INR")</label>
 </div>
 
-<div id="graph-explanation"><strong>@Umbraco.GetDictionaryValue("Patenttaksen voor") @Model.Content.Name</strong></div>
+@{ string currencyCode = "EUR";}
+@if (Request.Params["currency"] != null)
+{
+    currencyCode = Request.Params["currency"];
+}
+
+<div id="graph-explanation"><strong>@Umbraco.GetDictionaryValue("Patenttaksen voor") @Model.Content.Name in @Umbraco.GetDictionaryValue(currencyCode)</strong></div>
 <canvas id="myChart" width="620" height="400"></canvas>
 
 
 @Html.Action("Index", "ExtraCost", new { area = string.Empty })
 
 
-
 @section title
 {
     @Umbraco.GetDictionaryValue("Patentkosten") @Model.Content.Name
+}
+
+@section canonical {
+    <link rel="canonical" href="@Model.Content.Url"/>
 }
 
 @section optionalJs

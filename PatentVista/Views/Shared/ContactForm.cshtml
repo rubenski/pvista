@@ -23,6 +23,8 @@
                 <td>@Umbraco.GetDictionaryValue("Naam")</td>
                 <td>
                     @Html.TextBoxFor(x => Model.RealName, new { maxlength = 30, size = 31 })
+                </td>
+                <td>
                     @Html.ValidationMessageFor(model => Model.RealName)
                 </td>
             </tr>
@@ -32,7 +34,9 @@
                     @Umbraco.GetDictionaryValue("Email")
                 </td>
                 <td>
-                    @Html.TextBoxFor(x => Model.RealEmail, new { maxlength = 30, size = 31 })
+                    @Html.TextBoxFor(x => Model.RealEmail, new { maxlength = 30, size = 31 })                    
+                </td>
+                <td>
                     @Html.ValidationMessageFor(model => Model.RealEmail)
                 </td>
             </tr>
@@ -49,18 +53,20 @@
             <tr class="hide">
                 <td>
                     @Umbraco.GetDictionaryValue("Naam")
-            </td>
+                </td>
                 <td>
                     @Html.TextBoxFor(x => Model.Name, new { maxlength = 30, size = 31 })
-            </td>
+                </td>
             </tr>
 
             <tr>
                 <td>
                     @Umbraco.GetDictionaryValue("Onderwerp")
-            </td>
+                </td>
                 <td>
                     @Html.TextBoxFor(x => Model.Subject, new { maxlength = 30, size = 31 })
+                </td>
+                <td>
                     @Html.ValidationMessageFor(model => Model.Subject)
                 </td>
             </tr>
@@ -69,6 +75,8 @@
                 <td>@Umbraco.GetDictionaryValue("Bericht")</td>
                 <td>
                     @Html.TextAreaFor(x => Model.Message, new { @cols = 25, @rows = 10, maxlength = 500 })
+                </td>
+                <td>
                     @Html.ValidationMessageFor(model => Model.Message)
                 </td>
             </tr>

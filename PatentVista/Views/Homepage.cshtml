@@ -11,5 +11,5 @@
 </div>
 @section title
 {
-    @Umbraco.GetDictionaryValue("Patentkosten") @Model.Content.Name
+    @Model.Content.GetProperty("browserTitel").Value
 }

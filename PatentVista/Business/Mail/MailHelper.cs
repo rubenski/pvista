@@ -19,12 +19,13 @@ namespace PatentVista.Business.Mail
             var port = Properties.Settings.Default.SmtpPort;
             var user = Properties.Settings.Default.SmtpUser;
             var pass = Properties.Settings.Default.SmtpPass;
+            var secureMail = Properties.Settings.Default.SecureMail;
 
             using (var client = new SmtpClient
             {
                 Host = host,
                 Port = port,
-                EnableSsl = true,
+                EnableSsl = secureMail,
                 Credentials = new NetworkCredential(user, pass),
                 DeliveryMethod = SmtpDeliveryMethod.Network
             })
