@@ -10,5 +10,6 @@ namespace PatentVista.Models
         public IList<IPublishedContent> Rubrieken { get; set; }
         public IPublishedContent ContactPage { get; set; }
         public IPublishedContent CostPage { get; set; }
+        public IList<IPublishedContent> OtherPages { get; set; }
     }
 }

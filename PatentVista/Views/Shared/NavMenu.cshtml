@@ -20,6 +20,13 @@
     </ul>
     <b>@Umbraco.GetDictionaryValue("Overige")</b>
     <ul class="navmenu">
+        
+        @foreach (var otherPage in Model.OtherPages)
+        {
+            <li><a href="@otherPage.Url">@otherPage.Name</a></li>
+        }
+        
+
         <li>
             <a href="@Model.ContactPage.Url">@Model.ContactPage.GetProperty("paginaTitel").Value</a>
         </li>

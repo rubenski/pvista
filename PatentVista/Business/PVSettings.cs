@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using PatentVista.Business.Exception;
+using Umbraco.Core.Models;
 using umbraco;
-using umbraco.NodeFactory;
+
 
 namespace PatentVista.Business
 {
@@ -13,12 +15,16 @@ namespace PatentVista.Business
         {
             var settings = PvNodes.GetSettings();
 
-            var property = settings.Properties.First(x => x.Alias == name);
-
-            if (property == null)
+            Property property = null;
+            try
             {
-                throw new ArgumentException(String.Format("Setting with name '{0}' does not exist", name));
+                property = settings.Properties.First(x => x.Alias == name);
             }
+            catch (InvalidOperationException e)
+            {
+                throw new ArgumentException(string.Format("Web.Config setting '{0}' does not exist!", name), e);
+            }
+           
 
             return property.Value.ToString();
         }

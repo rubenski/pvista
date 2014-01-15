@@ -43,7 +43,7 @@ body {
 }
 
 #header img {
-    padding: 44px 0 44px 0;    
+    padding: 15px 0 16px 0;    
 }
 
 #languagebar {
@@ -179,6 +179,26 @@ p {
     float: left;
     width: 300px;
     margin-right: 30px;
+}
+
+#maintext div.listingitem {
+    overflow: auto;
+    margin-top: 17px;
+}
+
+#maintext .listingitem div.image {
+    width: 85px;
+    padding: 3px;
+    margin-right: 10px;
+}
+
+#maintext .listingitem div.desc {
+    width: 550px;
+}
+
+
+#maintext .listingitem div {
+    float: left;
 }
 
 #paging {

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Net;
 using System.Net.Mail;
@@ -13,18 +14,25 @@ namespace PatentVista.Business.Mail
     {
         public static void SendMail(EmailMessage message)
         {
+
+            var host = Properties.Settings.Default.SmtpHost;
+            var port = Properties.Settings.Default.SmtpPort;
+            var user = Properties.Settings.Default.SmtpUser;
+            var pass = Properties.Settings.Default.SmtpPass;
+
             using (var client = new SmtpClient
             {
-                Host = "smtp.gmail.com",
-                Port = 587,
+                Host = host,
+                Port = port,
                 EnableSsl = true,
-                Credentials = new NetworkCredential("rubenski", "Hijiszoleuk"),
+                Credentials = new NetworkCredential(user, pass),
                 DeliveryMethod = SmtpDeliveryMethod.Network
             })
             {
                 var mail = new MailMessage();
 
-                foreach (EmailAddress address in message.Recipients)
+
+                foreach (EmailAddress address in message.ToRecipients)
                 {
                     mail.To.Add(address.Email);   
                 }
@@ -32,7 +40,7 @@ namespace PatentVista.Business.Mail
                 mail.From = new MailAddress(message.From.Email, message.From.Name);
                 mail.Subject = message.Subject;
                 mail.Body = message.Message;
-                mail.IsBodyHtml = false;
+                mail.IsBodyHtml = true;
                 client.Send(mail);
                 
             }

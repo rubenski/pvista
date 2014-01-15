@@ -7,14 +7,14 @@ namespace PatentVista.Business.Mail
 {
     public class EmailMessage
     {
-        public IList<EmailAddress> Recipients = new List<EmailAddress>();
+        public IList<EmailAddress> ToRecipients = new List<EmailAddress>();
         public EmailAddress From { get; set; }
         public String Subject { get; set; }
         public String Message { get; set; }
 
-        public void AddRecipient(String name, String emailAddress)
+        public void AddToRecipient(String name, String emailAddress)
         {
-            Recipients.Add(new EmailAddress(name, emailAddress));
+            ToRecipients.Add(new EmailAddress(name, emailAddress));
         }
     }
 }

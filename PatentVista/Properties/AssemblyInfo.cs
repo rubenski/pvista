@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("PatentVista")]
+[assembly: AssemblyTitle("Patenticon")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Mirabeau")]
-[assembly: AssemblyProduct("PatentVista")]
-[assembly: AssemblyCopyright("Copyright © Mirabeau 2013")]
+[assembly: AssemblyCompany("Codebase Software")]
+[assembly: AssemblyProduct("Patenticon")]
+[assembly: AssemblyCopyright("Copyright © Codebase Software 2013")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

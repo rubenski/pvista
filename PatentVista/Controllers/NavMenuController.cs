@@ -17,6 +17,7 @@ namespace PatentVista.Controllers
             menuModel.Rubrieken = currentHomePage.Descendants("Rubriek").Where(x => x.IsVisible()).ToList();  
             menuModel.ContactPage = currentHomePage.DescendantsOrSelf("Contactpagina").First();
             menuModel.CostPage = currentHomePage.Descendants("Landenpagina").First();
+            menuModel.OtherPages = currentHomePage.Children().Where(x => x.DocumentTypeAlias.Equals("Tweekolomspagina")).ToList();
             return PartialView("NavMenu", menuModel);
         }
     }
