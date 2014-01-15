@@ -8,13 +8,11 @@ html {
 }
 
 body {
-    font-family: Verdana, Arial, sans-serif;
-    font-size: 11px;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
     padding-bottom: 100px;
     overflow: auto;
 }
-
-
 
 
 #top {
@@ -82,6 +80,7 @@ ul.navmenu {
 ul.navmenu li {
     list-style-type: none;
     padding-bottom: 5px;
+	list-style-image: none;
 }
 
 ul.navmenu li ul li {
@@ -89,6 +88,50 @@ ul.navmenu li ul li {
     padding-bottom: 5px;
 }
 
+ul{
+	margin-top: 0;
+	line-height: 150%;
+}
+
+ul {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	line-height: 1.8em;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	color: #000000;
+	text-decoration: none;
+	background-color: #FFFFFF;
+	text-indent: 0px;
+	list-style-position: outside;
+	list-style-image: url("/media/1014/triangle.gif" );
+	padding: 15px;
+	margin: 2px 0px 0px 0px;
+}
+
+ol{
+	margin-top: 0;
+	line-height: 150%;
+}
+
+ol {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	font-style: normal;
+	line-height: 1.8em;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	text-decoration: none;
+	background-color: #FFFFFF;
+	text-indent: 0px;
+	list-style-position: outside;
+	padding: 15px;
+	margin: 2px 0px 0px 0px;
+}
 #maintext {
     float: left;
     width: 660px;
@@ -100,19 +143,19 @@ ul.navmenu li ul li {
 }
 
 #maintext h1 {
-    font-family: verdana;
+    font-family: Arial;
     font-weight: normal;
     margin-bottom: 15px;
 }
 #h3 {
-	font-family: verdana;
-	font-size: 11px;
+	font-family: Arial;
+	font-size: 12px;
 	padding-bottom: 10px;
-	font-weight: normal;
-	color:  #3E5982; 
+	font-weight: bold;
+	color:  #3A6AB2; 
 }
 p {
-    margin: 0 0 15px 0;
+    margin: 0 0 11px 0;
     padding: 0;
     line-height: 20px;
 }
@@ -176,7 +219,7 @@ canvas {
     width: 582px;
     text-align: right;
     padding: 18px 18px 70px 0;
-    font-size: 11px;
+    font-size: 12px;
 	color: #FFFFFF;
 	
 }
@@ -217,7 +260,7 @@ input[type=radio] + label {
 */
 input[type=radio]:checked + label { 
    background-image: none;
-   background-color:#74AAE6;
+   background-color:rgba(12,90,166,0.7);
    font-weight: bold;
    color:#FFFF40;
    font-size: 14px;
@@ -230,17 +273,18 @@ input[type=radio]:checked + label {
 	margin-left: 25px;
 	margin-right: 5px;
     float: left;
+
 }
 
 .datatable td {
     padding: 8px;
-    background-color: #D6E7F8;
+    background-color: rgba(179,213,245,0.7);
 }
 
 
 .datatable th {
     padding: 8px;
-    background-color: #74AAE6;
+    background-color: rgba(12,90,166,0.7);
 }
 
 .countrytable {
@@ -250,12 +294,12 @@ input[type=radio]:checked + label {
 .countrytable tr td {
     padding: 5px;
     width: 80px;
-    background-color: #D6E7F8;
+    background-color: #EBEEF1;
 }
 
 .table {
-	border: 1px solid #B8E6E6;
-	background-color: #F0FFFF;
+	border: 1px solid #EBEEF1;
+	background-color: #EBEEF1;
 	border-radius: 6px;
 	-webkit-border-radius: 6px;
 	-moz-border-radius: 6px;
@@ -271,17 +315,17 @@ input[type=radio]:checked + label {
 }
 
 .table thead {
-	font-family: "verdana", "Lucida Grande", sans-serif;
+	font-family: "Arial", "Lucida Grande", sans-serif;
 	padding: .2em 0 .2em .5em;
 	text-align: left;
 	color: #01344B;
-	background-color: #B8E6E6;
+	background-color: #DEE2E6;
 	background-image: -webkit-gradient(linear, left top, left bottom, from(#C28A8A), to(#e3e3e3), color-stop(.6,#E5EAED));
 	background-image: -moz-linear-gradient(top, #01344B, #B0B0B0, #E5EAED 90%);
 	border-bottom: solid 1px #999;
 }
 .table th {
-	font-family: 'verdana', Helvetica, Arial, sans-serif;
+	font-family: 'Arial', Helvetica, sans-serif;
 	font-size: 12px;
 	line-height: 16px;
 	font-style: normal;
@@ -291,11 +335,28 @@ input[type=radio]:checked + label {
 }
 .table td {
 	line-height: 18px;
-	font-family: 'verdana', Helvetica, Arial, sans-serif;
-	font-size: 10px;
+	font-family: 'Arial', Helvetica, sans-serif;
+	font-size: 11px;
 	border-bottom: 0px solid #fff;
 	border-top: 1px solid #fff;
 }
 .table td:hover {
-	background-color: #FF9900;
+	background-color: #C50F0F;
+		font-family: 'Arial', Helvetica, sans-serif;
+		font-size: 11px;
+		color: #ffffff;
+	font-weight: bold;		
+}
+.textbox {
+	background-color: #B8E6E6;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#C28A8A), to(#e3e3e3), color-stop(.6,#E5EAED));
+	background-image: -moz-linear-gradient(top, #01344B, #B0B0B0, #E5EAED 90%);
+	border-bottom: solid 1px #999;
+	line-height: 18px;
+	font-family: 'Arial', Helvetica, sans-serif;
+	font-size: 11px;
+	border-top: 1px solid #fff;
+	font-style: normal;
+	font-weight: normal;
+	vertical-align:text-top;
 }
