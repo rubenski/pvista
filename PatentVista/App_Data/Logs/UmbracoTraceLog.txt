@@ -1,468 +1,289 @@
-2014-01-16 00:10:48,403 [79] INFO  umbraco.BusinessLogic.Log - [Thread 62] Log scrubbed.  Removed all items older than 2013-11-17 00:10:48
-2014-01-16 00:10:48,404 [79] INFO  Umbraco.Core.UmbracoApplicationBase - [Thread 62] Application shutdown. Reason: BinDirChangeOrDirectoryRename
-2014-01-16 00:10:53,949 [19] INFO  Umbraco.Core.PluginManager - [Thread 22] Determining hash of code files on disk
-2014-01-16 00:10:53,967 [19] INFO  Umbraco.Core.PluginManager - [Thread 22] Hash determined (took 7ms)
-2014-01-16 00:10:53,981 [19] INFO  Umbraco.Core.PluginManager - [Thread 22] Starting resolution types of umbraco.interfaces.IApplicationStartupHandler
-2014-01-16 00:10:54,099 [19] INFO  Umbraco.Core.PluginManager - [Thread 22] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 16 (took 116ms)
-2014-01-16 00:10:54,125 [19] INFO  Umbraco.Core.PluginManager - [Thread 22] Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
-2014-01-16 00:10:54,132 [19] INFO  Umbraco.Core.PluginManager - [Thread 22] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 6ms)
-2014-01-16 00:10:54,135 [19] INFO  Umbraco.Core.PluginManager - [Thread 22] Starting resolution types of Umbraco.Web.Mvc.SurfaceController
-2014-01-16 00:10:54,145 [19] INFO  Umbraco.Core.PluginManager - [Thread 22] Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 8 (took 10ms)
-2014-01-16 00:10:54,146 [19] INFO  Umbraco.Core.PluginManager - [Thread 22] Starting resolution types of Umbraco.Web.WebApi.UmbracoApiController
-2014-01-16 00:10:54,151 [19] INFO  Umbraco.Core.PluginManager - [Thread 22] Completed resolution of types of Umbraco.Web.WebApi.UmbracoApiController, found 3 (took 5ms)
-2014-01-16 00:10:54,154 [19] INFO  Umbraco.Core.PluginManager - [Thread 22] Starting resolution types of Umbraco.Core.Media.IThumbnailProvider
-2014-01-16 00:10:54,161 [19] INFO  Umbraco.Core.PluginManager - [Thread 22] Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 3 (took 7ms)
-2014-01-16 00:10:54,161 [19] INFO  Umbraco.Core.PluginManager - [Thread 22] Starting resolution types of Umbraco.Core.Media.IImageUrlProvider
-2014-01-16 00:10:54,171 [19] INFO  Umbraco.Core.PluginManager - [Thread 22] Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 1 (took 9ms)
-2014-01-16 00:10:54,382 [19] INFO  Umbraco.Web.Search.ExamineEvents - [Thread 22] Initializing Examine and binding to business logic events
-2014-01-16 00:10:54,833 [19] INFO  Umbraco.Web.Search.ExamineEvents - [Thread 22] Adding examine event handlers for index providers: 3
-2014-01-16 00:10:54,845 [19] INFO  Umbraco.Core.PluginManager - [Thread 22] Starting resolution types of umbraco.interfaces.IApplication
-2014-01-16 00:10:54,855 [19] INFO  Umbraco.Core.PluginManager - [Thread 22] Completed resolution of types of umbraco.interfaces.IApplication, found 7 (took 10ms)
-2014-01-16 00:10:54,919 [19] INFO  Umbraco.Core.PluginManager - [Thread 22] Starting resolution types of umbraco.interfaces.ITree
-2014-01-16 00:10:54,941 [19] INFO  Umbraco.Core.PluginManager - [Thread 22] Completed resolution of types of umbraco.interfaces.ITree, found 27 (took 21ms)
-2014-01-16 00:10:55,101 [19] INFO  umbraco.content - [Thread 46] Loading content from disk cache...
-2014-01-16 00:10:56,736 [19] INFO  Umbraco.Core.PluginManager - [Thread 46] Starting resolution types of Umbraco.Core.Persistence.Mappers.BaseMapper
-2014-01-16 00:10:56,742 [19] INFO  Umbraco.Core.PluginManager - [Thread 46] Completed resolution of types of Umbraco.Core.Persistence.Mappers.BaseMapper, found 17 (took 6ms)
-2014-01-16 00:10:59,555 [19] WARN  Umbraco.Web.Dictionary.DefaultCultureDictionary - [Thread 46] Error returning dictionary item 'Totaal en gemiddelde'. Exception: System.ArgumentException: No key Totaal en gemiddelde exists in dictionary
+2014-10-22 00:00:13,509 [46] INFO  umbraco.presentation.publishingService - [Thread 43] test60 has been called with response: False
+2014-10-22 00:01:07,870 [46] WARN  Umbraco.Web.Dictionary.DefaultCultureDictionary - [Thread 43] Error returning dictionary item 'bottomregel'. Exception: System.ArgumentException: No key bottomregel exists in dictionary
    at umbraco.cms.businesslogic.Dictionary.DictionaryItem..ctor(String key)
    at Umbraco.Web.Dictionary.DefaultCultureDictionary.get_Item(String key)
-2014-01-16 00:10:59,555 [19] WARN  Umbraco.Web.Dictionary.DefaultCultureDictionary - [Thread 46] Error returning dictionary item 'Totaal taksen'. Exception: System.ArgumentException: No key Totaal taksen exists in dictionary
+2014-10-22 00:02:04,298 [46] INFO  umbraco.BusinessLogic.Log - [Thread 50] Log scrubbed.  Removed all items older than 2014-08-23 00:02:04
+2014-10-22 00:02:04,300 [46] INFO  Umbraco.Core.UmbracoApplicationBase - [Thread 50] Application shutdown. Reason: ConfigurationChange
+2014-10-22 00:03:33,235 [39] INFO  Umbraco.Core.PluginManager - [Thread 40] Determining hash of code files on disk
+2014-10-22 00:03:33,248 [39] INFO  Umbraco.Core.PluginManager - [Thread 40] Hash determined (took 6ms)
+2014-10-22 00:03:33,253 [39] INFO  Umbraco.Core.PluginManager - [Thread 40] Starting resolution types of umbraco.interfaces.IApplicationStartupHandler
+2014-10-22 00:03:33,349 [39] INFO  Umbraco.Core.PluginManager - [Thread 40] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 16 (took 96ms)
+2014-10-22 00:03:33,351 [39] INFO  Umbraco.Core.PluginManager - [Thread 40] Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+2014-10-22 00:03:33,357 [39] INFO  Umbraco.Core.PluginManager - [Thread 40] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 6ms)
+2014-10-22 00:03:33,358 [39] INFO  Umbraco.Core.PluginManager - [Thread 40] Starting resolution types of Umbraco.Web.Mvc.SurfaceController
+2014-10-22 00:03:33,368 [39] INFO  Umbraco.Core.PluginManager - [Thread 40] Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 8 (took 9ms)
+2014-10-22 00:03:33,368 [39] INFO  Umbraco.Core.PluginManager - [Thread 40] Starting resolution types of Umbraco.Web.WebApi.UmbracoApiController
+2014-10-22 00:03:33,374 [39] INFO  Umbraco.Core.PluginManager - [Thread 40] Completed resolution of types of Umbraco.Web.WebApi.UmbracoApiController, found 3 (took 6ms)
+2014-10-22 00:03:33,375 [39] INFO  Umbraco.Core.PluginManager - [Thread 40] Starting resolution types of Umbraco.Core.Media.IThumbnailProvider
+2014-10-22 00:03:33,382 [39] INFO  Umbraco.Core.PluginManager - [Thread 40] Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 3 (took 6ms)
+2014-10-22 00:03:33,382 [39] INFO  Umbraco.Core.PluginManager - [Thread 40] Starting resolution types of Umbraco.Core.Media.IImageUrlProvider
+2014-10-22 00:03:33,389 [39] INFO  Umbraco.Core.PluginManager - [Thread 40] Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 1 (took 6ms)
+2014-10-22 00:03:33,499 [39] INFO  Umbraco.Web.Search.ExamineEvents - [Thread 40] Initializing Examine and binding to business logic events
+2014-10-22 00:03:33,736 [39] INFO  Umbraco.Web.Search.ExamineEvents - [Thread 40] Adding examine event handlers for index providers: 3
+2014-10-22 00:03:33,737 [39] INFO  Umbraco.Core.PluginManager - [Thread 40] Starting resolution types of umbraco.interfaces.IApplication
+2014-10-22 00:03:33,747 [39] INFO  Umbraco.Core.PluginManager - [Thread 40] Completed resolution of types of umbraco.interfaces.IApplication, found 7 (took 10ms)
+2014-10-22 00:03:33,780 [39] INFO  Umbraco.Core.PluginManager - [Thread 40] Starting resolution types of umbraco.interfaces.ITree
+2014-10-22 00:03:33,802 [39] INFO  Umbraco.Core.PluginManager - [Thread 40] Completed resolution of types of umbraco.interfaces.ITree, found 27 (took 22ms)
+2014-10-22 00:03:33,890 [39] INFO  umbraco.content - [Thread 49] Loading content from disk cache...
+2014-10-22 00:03:34,138 [39] INFO  Umbraco.Core.PluginManager - [Thread 49] Starting resolution types of Umbraco.Core.Persistence.Mappers.BaseMapper
+2014-10-22 00:03:34,146 [39] INFO  Umbraco.Core.PluginManager - [Thread 49] Completed resolution of types of Umbraco.Core.Persistence.Mappers.BaseMapper, found 17 (took 7ms)
+2014-10-22 00:03:34,529 [39] WARN  Umbraco.Web.Dictionary.DefaultCultureDictionary - [Thread 49] Error returning dictionary item 'bottomregel'. Exception: System.ArgumentException: No key bottomregel exists in dictionary
    at umbraco.cms.businesslogic.Dictionary.DictionaryItem..ctor(String key)
    at Umbraco.Web.Dictionary.DefaultCultureDictionary.get_Item(String key)
-2014-01-16 00:10:59,558 [19] WARN  Umbraco.Web.Dictionary.DefaultCultureDictionary - [Thread 46] Error returning dictionary item 'Gemiddelde takse'. Exception: System.ArgumentException: No key Gemiddelde takse exists in dictionary
+2014-10-22 00:03:45,853 [39] WARN  Umbraco.Web.Dictionary.DefaultCultureDictionary - [Thread 43] Error returning dictionary item 'bottomregel'. Exception: System.ArgumentException: No key bottomregel exists in dictionary
    at umbraco.cms.businesslogic.Dictionary.DictionaryItem..ctor(String key)
    at Umbraco.Web.Dictionary.DefaultCultureDictionary.get_Item(String key)
-2014-01-16 00:11:25,523 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'AED' with Id '3935' has been published.
-2014-01-16 00:11:25,666 [19] INFO  Umbraco.Core.PluginManager - [Thread 46] Starting resolution types of umbraco.interfaces.IDataType
-2014-01-16 00:11:25,683 [19] INFO  Umbraco.Core.PluginManager - [Thread 46] Completed resolution of types of umbraco.interfaces.IDataType, found 36 (took 16ms)
-2014-01-16 00:11:25,692 [19] INFO  Umbraco.Core.PluginManager - [Thread 46] Starting resolution types of umbraco.interfaces.ITree
-2014-01-16 00:11:25,711 [19] INFO  Umbraco.Core.PluginManager - [Thread 46] Completed resolution of types of umbraco.interfaces.ITree, found 36 (took 18ms)
-2014-01-16 00:11:25,801 [19] INFO  Umbraco.Core.PluginManager - [Thread 46] Starting resolution types of umbraco.interfaces.ICacheRefresher
-2014-01-16 00:11:25,811 [19] INFO  Umbraco.Core.PluginManager - [Thread 46] Completed resolution of types of umbraco.interfaces.ICacheRefresher, found 22 (took 10ms)
-2014-01-16 00:11:25,868 [19] INFO  Umbraco.Core.PluginManager - [Thread 46] Starting resolution types of umbraco.BusinessLogic.Actions.IActionHandler
-2014-01-16 00:11:25,874 [19] INFO  Umbraco.Core.PluginManager - [Thread 46] Completed resolution of types of umbraco.BusinessLogic.Actions.IActionHandler, found 1 (took 6ms)
-2014-01-16 00:11:26,051 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'AFN' with Id '3412' has been published.
-2014-01-16 00:11:26,223 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'ALL' with Id '3413' has been published.
-2014-01-16 00:11:26,385 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'AMD' with Id '3414' has been published.
-2014-01-16 00:11:26,564 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'ANG' with Id '3415' has been published.
-2014-01-16 00:11:26,770 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'AOA' with Id '3416' has been published.
-2014-01-16 00:11:26,951 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'ARS' with Id '3417' has been published.
-2014-01-16 00:11:27,168 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'AUD' with Id '3418' has been published.
-2014-01-16 00:11:27,376 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'AWG' with Id '3419' has been published.
-2014-01-16 00:11:27,561 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'AZN' with Id '3420' has been published.
-2014-01-16 00:11:27,753 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'BAM' with Id '3421' has been published.
-2014-01-16 00:11:28,035 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'BBD' with Id '3422' has been published.
-2014-01-16 00:11:28,310 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'BDT' with Id '3423' has been published.
-2014-01-16 00:11:28,496 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'BGN' with Id '3424' has been published.
-2014-01-16 00:11:28,682 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'BHD' with Id '3425' has been published.
-2014-01-16 00:11:28,930 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'BIF' with Id '3426' has been published.
-2014-01-16 00:11:29,171 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'BMD' with Id '3427' has been published.
-2014-01-16 00:11:29,406 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'BND' with Id '3428' has been published.
-2014-01-16 00:11:29,842 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'BOB' with Id '3429' has been published.
-2014-01-16 00:11:30,125 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'BRL' with Id '3430' has been published.
-2014-01-16 00:11:30,414 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'BSD' with Id '3431' has been published.
-2014-01-16 00:11:30,852 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'BTC' with Id '3432' has been published.
-2014-01-16 00:11:31,099 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'BTN' with Id '3433' has been published.
-2014-01-16 00:11:31,277 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'BWP' with Id '3434' has been published.
-2014-01-16 00:11:31,469 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'BYR' with Id '3435' has been published.
-2014-01-16 00:11:31,773 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'BZD' with Id '3436' has been published.
-2014-01-16 00:11:31,952 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'CAD' with Id '3437' has been published.
-2014-01-16 00:11:32,254 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'CDF' with Id '3438' has been published.
-2014-01-16 00:11:32,572 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'CHF' with Id '3439' has been published.
-2014-01-16 00:11:32,829 [19] WARN  Umbraco.Web.Dictionary.DefaultCultureDictionary - [Thread 9] Error returning dictionary item 'Totaal en gemiddelde'. Exception: System.ArgumentException: No key Totaal en gemiddelde exists in dictionary
+2014-10-22 00:03:47,300 [39] WARN  Umbraco.Web.Dictionary.DefaultCultureDictionary - [Thread 41] Error returning dictionary item 'bottomregel'. Exception: System.ArgumentException: No key bottomregel exists in dictionary
    at umbraco.cms.businesslogic.Dictionary.DictionaryItem..ctor(String key)
    at Umbraco.Web.Dictionary.DefaultCultureDictionary.get_Item(String key)
-2014-01-16 00:11:32,829 [19] WARN  Umbraco.Web.Dictionary.DefaultCultureDictionary - [Thread 9] Error returning dictionary item 'Totaal taksen'. Exception: System.ArgumentException: No key Totaal taksen exists in dictionary
+2014-10-22 00:03:48,452 [39] WARN  Umbraco.Web.Dictionary.DefaultCultureDictionary - [Thread 43] Error returning dictionary item 'bottomregel'. Exception: System.ArgumentException: No key bottomregel exists in dictionary
    at umbraco.cms.businesslogic.Dictionary.DictionaryItem..ctor(String key)
    at Umbraco.Web.Dictionary.DefaultCultureDictionary.get_Item(String key)
-2014-01-16 00:11:32,829 [19] WARN  Umbraco.Web.Dictionary.DefaultCultureDictionary - [Thread 9] Error returning dictionary item 'Gemiddelde takse'. Exception: System.ArgumentException: No key Gemiddelde takse exists in dictionary
+2014-10-22 00:03:50,144 [39] WARN  Umbraco.Web.Dictionary.DefaultCultureDictionary - [Thread 41] Error returning dictionary item 'bottomregel'. Exception: System.ArgumentException: No key bottomregel exists in dictionary
    at umbraco.cms.businesslogic.Dictionary.DictionaryItem..ctor(String key)
    at Umbraco.Web.Dictionary.DefaultCultureDictionary.get_Item(String key)
-2014-01-16 00:11:32,880 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'CLF' with Id '3440' has been published.
-2014-01-16 00:11:33,117 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'CLP' with Id '3441' has been published.
-2014-01-16 00:11:33,325 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'CNY' with Id '3442' has been published.
-2014-01-16 00:11:33,910 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'COP' with Id '3443' has been published.
-2014-01-16 00:11:34,113 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'CRC' with Id '3444' has been published.
-2014-01-16 00:11:34,328 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'CUP' with Id '3445' has been published.
-2014-01-16 00:11:34,534 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'CVE' with Id '3446' has been published.
-2014-01-16 00:11:34,726 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'CZK' with Id '3447' has been published.
-2014-01-16 00:11:34,919 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'DJF' with Id '3448' has been published.
-2014-01-16 00:11:35,098 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'DKK' with Id '3449' has been published.
-2014-01-16 00:11:35,286 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'DOP' with Id '3450' has been published.
-2014-01-16 00:11:35,474 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'DZD' with Id '3451' has been published.
-2014-01-16 00:11:35,695 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'EEK' with Id '3452' has been published.
-2014-01-16 00:11:36,129 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'EGP' with Id '3453' has been published.
-2014-01-16 00:11:36,321 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'ERN' with Id '3454' has been published.
-2014-01-16 00:11:36,514 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'ETB' with Id '3455' has been published.
-2014-01-16 00:11:36,710 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'EUR' with Id '3456' has been published.
-2014-01-16 00:11:37,079 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'FJD' with Id '3457' has been published.
-2014-01-16 00:11:37,268 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'FKP' with Id '3458' has been published.
-2014-01-16 00:11:37,463 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'GBP' with Id '3459' has been published.
-2014-01-16 00:11:37,641 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'GEL' with Id '3460' has been published.
-2014-01-16 00:11:37,752 [19] INFO  UmbracoExamine.DataServices.UmbracoLogService - [Thread 18] Index is being optimized, Provider=ExternalIndexer, NodeId=-1
-2014-01-16 00:11:37,759 [19] INFO  UmbracoExamine.DataServices.UmbracoLogService - [Thread 93] Index is being optimized, Provider=InternalIndexer, NodeId=-1
-2014-01-16 00:11:37,855 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'GHS' with Id '3461' has been published.
-2014-01-16 00:11:38,072 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'GIP' with Id '3462' has been published.
-2014-01-16 00:11:38,250 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'GMD' with Id '3463' has been published.
-2014-01-16 00:11:38,484 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'GNF' with Id '3464' has been published.
-2014-01-16 00:11:38,758 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'GTQ' with Id '3465' has been published.
-2014-01-16 00:11:39,221 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'GYD' with Id '3466' has been published.
-2014-01-16 00:11:39,416 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'HKD' with Id '3467' has been published.
-2014-01-16 00:11:39,610 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'HNL' with Id '3468' has been published.
-2014-01-16 00:11:39,900 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'HRK' with Id '3469' has been published.
-2014-01-16 00:11:40,090 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'HTG' with Id '3470' has been published.
-2014-01-16 00:11:40,350 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'HUF' with Id '3471' has been published.
-2014-01-16 00:11:40,533 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'IDR' with Id '3472' has been published.
-2014-01-16 00:11:40,725 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'ILS' with Id '3473' has been published.
-2014-01-16 00:11:40,979 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'INR' with Id '3474' has been published.
-2014-01-16 00:11:41,334 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'IQD' with Id '3475' has been published.
-2014-01-16 00:11:41,518 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'IRR' with Id '3476' has been published.
-2014-01-16 00:11:41,708 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'ISK' with Id '3477' has been published.
-2014-01-16 00:11:41,765 [19] WARN  Umbraco.Web.Dictionary.DefaultCultureDictionary - [Thread 50] Error returning dictionary item 'Totaal en gemiddelde'. Exception: System.ArgumentException: No key Totaal en gemiddelde exists in dictionary
+2014-10-22 00:03:54,834 [39] WARN  Umbraco.Web.Dictionary.DefaultCultureDictionary - [Thread 47] Error returning dictionary item ''. Exception: System.ArgumentException: No key  exists in dictionary
    at umbraco.cms.businesslogic.Dictionary.DictionaryItem..ctor(String key)
    at Umbraco.Web.Dictionary.DefaultCultureDictionary.get_Item(String key)
-2014-01-16 00:11:41,765 [19] WARN  Umbraco.Web.Dictionary.DefaultCultureDictionary - [Thread 50] Error returning dictionary item 'Totaal taksen'. Exception: System.ArgumentException: No key Totaal taksen exists in dictionary
+2014-10-22 00:03:54,837 [39] WARN  Umbraco.Web.Dictionary.DefaultCultureDictionary - [Thread 47] Error returning dictionary item ''. Exception: System.ArgumentException: No key  exists in dictionary
    at umbraco.cms.businesslogic.Dictionary.DictionaryItem..ctor(String key)
    at Umbraco.Web.Dictionary.DefaultCultureDictionary.get_Item(String key)
-2014-01-16 00:11:41,765 [19] WARN  Umbraco.Web.Dictionary.DefaultCultureDictionary - [Thread 50] Error returning dictionary item 'Gemiddelde takse'. Exception: System.ArgumentException: No key Gemiddelde takse exists in dictionary
+2014-10-22 00:03:54,838 [39] WARN  Umbraco.Web.Dictionary.DefaultCultureDictionary - [Thread 47] Error returning dictionary item ''. Exception: System.ArgumentException: No key  exists in dictionary
    at umbraco.cms.businesslogic.Dictionary.DictionaryItem..ctor(String key)
    at Umbraco.Web.Dictionary.DefaultCultureDictionary.get_Item(String key)
-2014-01-16 00:11:41,937 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'JEP' with Id '3478' has been published.
-2014-01-16 00:11:42,183 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'JMD' with Id '3479' has been published.
-2014-01-16 00:11:42,383 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'JOD' with Id '3480' has been published.
-2014-01-16 00:11:42,606 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'JPY' with Id '3481' has been published.
-2014-01-16 00:11:42,850 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'KES' with Id '3482' has been published.
-2014-01-16 00:11:43,197 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'KGS' with Id '3483' has been published.
-2014-01-16 00:11:43,464 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'KHR' with Id '3484' has been published.
-2014-01-16 00:11:43,711 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'KMF' with Id '3485' has been published.
-2014-01-16 00:11:44,044 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'KPW' with Id '3486' has been published.
-2014-01-16 00:11:44,280 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'KRW' with Id '3487' has been published.
-2014-01-16 00:11:44,608 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'KWD' with Id '3488' has been published.
-2014-01-16 00:11:44,875 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'KYD' with Id '3489' has been published.
-2014-01-16 00:11:45,053 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'KZT' with Id '3490' has been published.
-2014-01-16 00:11:45,288 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'LAK' with Id '3491' has been published.
-2014-01-16 00:11:45,471 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'LBP' with Id '3492' has been published.
-2014-01-16 00:11:45,642 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'LKR' with Id '3493' has been published.
-2014-01-16 00:11:45,851 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'LRD' with Id '3494' has been published.
-2014-01-16 00:11:46,166 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'LSL' with Id '3495' has been published.
-2014-01-16 00:11:46,332 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'LTL' with Id '3496' has been published.
-2014-01-16 00:11:46,544 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'LVL' with Id '3497' has been published.
-2014-01-16 00:11:46,750 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'LYD' with Id '3498' has been published.
-2014-01-16 00:11:46,963 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'MAD' with Id '3499' has been published.
-2014-01-16 00:11:47,221 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'MDL' with Id '3500' has been published.
-2014-01-16 00:11:47,407 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'MGA' with Id '3501' has been published.
-2014-01-16 00:11:47,586 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'MKD' with Id '3502' has been published.
-2014-01-16 00:11:47,781 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'MMK' with Id '3503' has been published.
-2014-01-16 00:11:47,973 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'MNT' with Id '3504' has been published.
-2014-01-16 00:11:48,168 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'MOP' with Id '3505' has been published.
-2014-01-16 00:11:48,383 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'MRO' with Id '3506' has been published.
-2014-01-16 00:11:48,637 [19] WARN  Umbraco.Web.Dictionary.DefaultCultureDictionary - [Thread 12] Error returning dictionary item 'Totaal en gemiddelde'. Exception: System.ArgumentException: No key Totaal en gemiddelde exists in dictionary
+2014-10-22 00:03:54,839 [39] WARN  Umbraco.Web.Dictionary.DefaultCultureDictionary - [Thread 47] Error returning dictionary item ''. Exception: System.ArgumentException: No key  exists in dictionary
    at umbraco.cms.businesslogic.Dictionary.DictionaryItem..ctor(String key)
    at Umbraco.Web.Dictionary.DefaultCultureDictionary.get_Item(String key)
-2014-01-16 00:11:48,637 [19] WARN  Umbraco.Web.Dictionary.DefaultCultureDictionary - [Thread 12] Error returning dictionary item 'Totaal taksen'. Exception: System.ArgumentException: No key Totaal taksen exists in dictionary
+2014-10-22 00:04:06,570 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'AED' with Id '3935' has been published.
+2014-10-22 00:04:06,692 [39] INFO  Umbraco.Core.PluginManager - [Thread 43] Starting resolution types of umbraco.interfaces.IDataType
+2014-10-22 00:04:06,709 [39] INFO  Umbraco.Core.PluginManager - [Thread 43] Completed resolution of types of umbraco.interfaces.IDataType, found 36 (took 16ms)
+2014-10-22 00:04:06,717 [39] INFO  Umbraco.Core.PluginManager - [Thread 43] Starting resolution types of umbraco.interfaces.ITree
+2014-10-22 00:04:06,736 [39] INFO  Umbraco.Core.PluginManager - [Thread 43] Completed resolution of types of umbraco.interfaces.ITree, found 36 (took 18ms)
+2014-10-22 00:04:06,837 [39] INFO  Umbraco.Core.PluginManager - [Thread 43] Starting resolution types of umbraco.interfaces.ICacheRefresher
+2014-10-22 00:04:06,852 [39] INFO  Umbraco.Core.PluginManager - [Thread 43] Completed resolution of types of umbraco.interfaces.ICacheRefresher, found 22 (took 14ms)
+2014-10-22 00:04:06,955 [39] INFO  Umbraco.Core.PluginManager - [Thread 43] Starting resolution types of umbraco.BusinessLogic.Actions.IActionHandler
+2014-10-22 00:04:06,962 [39] INFO  Umbraco.Core.PluginManager - [Thread 43] Completed resolution of types of umbraco.BusinessLogic.Actions.IActionHandler, found 1 (took 7ms)
+2014-10-22 00:04:07,136 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'AFN' with Id '3412' has been published.
+2014-10-22 00:04:07,295 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'ALL' with Id '3413' has been published.
+2014-10-22 00:04:07,471 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'AMD' with Id '3414' has been published.
+2014-10-22 00:04:07,646 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'ANG' with Id '3415' has been published.
+2014-10-22 00:04:07,798 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'AOA' with Id '3416' has been published.
+2014-10-22 00:04:07,960 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'ARS' with Id '3417' has been published.
+2014-10-22 00:04:08,140 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'AUD' with Id '3418' has been published.
+2014-10-22 00:04:08,313 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'AWG' with Id '3419' has been published.
+2014-10-22 00:04:08,469 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'AZN' with Id '3420' has been published.
+2014-10-22 00:04:08,624 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'BAM' with Id '3421' has been published.
+2014-10-22 00:04:08,769 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'BBD' with Id '3422' has been published.
+2014-10-22 00:04:08,939 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'BDT' with Id '3423' has been published.
+2014-10-22 00:04:09,092 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'BGN' with Id '3424' has been published.
+2014-10-22 00:04:09,252 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'BHD' with Id '3425' has been published.
+2014-10-22 00:04:09,398 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'BIF' with Id '3426' has been published.
+2014-10-22 00:04:09,553 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'BMD' with Id '3427' has been published.
+2014-10-22 00:04:09,707 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'BND' with Id '3428' has been published.
+2014-10-22 00:04:09,858 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'BOB' with Id '3429' has been published.
+2014-10-22 00:04:10,023 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'BRL' with Id '3430' has been published.
+2014-10-22 00:04:10,184 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'BSD' with Id '3431' has been published.
+2014-10-22 00:04:10,369 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'BTC' with Id '3432' has been published.
+2014-10-22 00:04:10,541 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'BTN' with Id '3433' has been published.
+2014-10-22 00:04:10,706 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'BWP' with Id '3434' has been published.
+2014-10-22 00:04:10,910 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'BYR' with Id '3435' has been published.
+2014-10-22 00:04:11,124 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'BZD' with Id '3436' has been published.
+2014-10-22 00:04:11,361 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'CAD' with Id '3437' has been published.
+2014-10-22 00:04:11,535 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'CDF' with Id '3438' has been published.
+2014-10-22 00:04:11,728 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'CHF' with Id '3439' has been published.
+2014-10-22 00:04:11,910 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'CLF' with Id '3440' has been published.
+2014-10-22 00:04:12,101 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'CLP' with Id '3441' has been published.
+2014-10-22 00:04:12,292 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'CNY' with Id '3442' has been published.
+2014-10-22 00:04:12,576 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'COP' with Id '3443' has been published.
+2014-10-22 00:04:12,722 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'CRC' with Id '3444' has been published.
+2014-10-22 00:04:12,862 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'CUP' with Id '3445' has been published.
+2014-10-22 00:04:13,042 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'CVE' with Id '3446' has been published.
+2014-10-22 00:04:13,193 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'CZK' with Id '3447' has been published.
+2014-10-22 00:04:13,363 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'DJF' with Id '3448' has been published.
+2014-10-22 00:04:13,568 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'DKK' with Id '3449' has been published.
+2014-10-22 00:04:13,733 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'DOP' with Id '3450' has been published.
+2014-10-22 00:04:13,904 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'DZD' with Id '3451' has been published.
+2014-10-22 00:04:14,065 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'EEK' with Id '3452' has been published.
+2014-10-22 00:04:14,249 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'EGP' with Id '3453' has been published.
+2014-10-22 00:04:14,445 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'ERN' with Id '3454' has been published.
+2014-10-22 00:04:14,626 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'ETB' with Id '3455' has been published.
+2014-10-22 00:04:14,797 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'EUR' with Id '3456' has been published.
+2014-10-22 00:04:14,962 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'FJD' with Id '3457' has been published.
+2014-10-22 00:04:15,120 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'FKP' with Id '3458' has been published.
+2014-10-22 00:04:15,297 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'GBP' with Id '3459' has been published.
+2014-10-22 00:04:15,456 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'GEL' with Id '3460' has been published.
+2014-10-22 00:04:15,566 [39] INFO  UmbracoExamine.DataServices.UmbracoLogService - [Thread 48] Index is being optimized, Provider=ExternalIndexer, NodeId=-1
+2014-10-22 00:04:15,595 [39] INFO  UmbracoExamine.DataServices.UmbracoLogService - [Thread 49] Index is being optimized, Provider=InternalIndexer, NodeId=-1
+2014-10-22 00:04:15,639 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'GGP' with Id '4749' has been published.
+2014-10-22 00:04:15,787 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'GHS' with Id '3461' has been published.
+2014-10-22 00:04:15,946 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'GIP' with Id '3462' has been published.
+2014-10-22 00:04:16,106 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'GMD' with Id '3463' has been published.
+2014-10-22 00:04:16,259 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'GNF' with Id '3464' has been published.
+2014-10-22 00:04:16,408 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'GTQ' with Id '3465' has been published.
+2014-10-22 00:04:16,560 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'GYD' with Id '3466' has been published.
+2014-10-22 00:04:16,722 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'HKD' with Id '3467' has been published.
+2014-10-22 00:04:16,881 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'HNL' with Id '3468' has been published.
+2014-10-22 00:04:17,047 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'HRK' with Id '3469' has been published.
+2014-10-22 00:04:17,236 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'HTG' with Id '3470' has been published.
+2014-10-22 00:04:18,015 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'HUF' with Id '3471' has been published.
+2014-10-22 00:04:18,197 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'IDR' with Id '3472' has been published.
+2014-10-22 00:04:18,362 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'ILS' with Id '3473' has been published.
+2014-10-22 00:04:18,529 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'IMP' with Id '4750' has been published.
+2014-10-22 00:04:18,691 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'INR' with Id '3474' has been published.
+2014-10-22 00:04:18,864 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'IQD' with Id '3475' has been published.
+2014-10-22 00:04:19,050 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'IRR' with Id '3476' has been published.
+2014-10-22 00:04:19,203 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'ISK' with Id '3477' has been published.
+2014-10-22 00:04:19,384 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'JEP' with Id '3478' has been published.
+2014-10-22 00:04:19,544 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'JMD' with Id '3479' has been published.
+2014-10-22 00:04:19,694 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'JOD' with Id '3480' has been published.
+2014-10-22 00:04:19,865 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'JPY' with Id '3481' has been published.
+2014-10-22 00:04:20,038 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'KES' with Id '3482' has been published.
+2014-10-22 00:04:20,209 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'KGS' with Id '3483' has been published.
+2014-10-22 00:04:20,384 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'KHR' with Id '3484' has been published.
+2014-10-22 00:04:20,556 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'KMF' with Id '3485' has been published.
+2014-10-22 00:04:20,742 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'KPW' with Id '3486' has been published.
+2014-10-22 00:04:20,955 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'KRW' with Id '3487' has been published.
+2014-10-22 00:04:21,159 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'KWD' with Id '3488' has been published.
+2014-10-22 00:04:21,368 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'KYD' with Id '3489' has been published.
+2014-10-22 00:04:21,556 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'KZT' with Id '3490' has been published.
+2014-10-22 00:04:21,741 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'LAK' with Id '3491' has been published.
+2014-10-22 00:04:21,938 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'LBP' with Id '3492' has been published.
+2014-10-22 00:04:22,133 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'LKR' with Id '3493' has been published.
+2014-10-22 00:04:22,307 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'LRD' with Id '3494' has been published.
+2014-10-22 00:04:22,761 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'LSL' with Id '3495' has been published.
+2014-10-22 00:04:23,067 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'LTL' with Id '3496' has been published.
+2014-10-22 00:04:23,257 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'LVL' with Id '3497' has been published.
+2014-10-22 00:04:23,444 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'LYD' with Id '3498' has been published.
+2014-10-22 00:04:23,614 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'MAD' with Id '3499' has been published.
+2014-10-22 00:04:23,772 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'MDL' with Id '3500' has been published.
+2014-10-22 00:04:23,942 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'MGA' with Id '3501' has been published.
+2014-10-22 00:04:24,115 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'MKD' with Id '3502' has been published.
+2014-10-22 00:04:24,275 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'MMK' with Id '3503' has been published.
+2014-10-22 00:04:24,451 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'MNT' with Id '3504' has been published.
+2014-10-22 00:04:24,632 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'MOP' with Id '3505' has been published.
+2014-10-22 00:04:24,788 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'MRO' with Id '3506' has been published.
+2014-10-22 00:04:24,969 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'MTL' with Id '3507' has been published.
+2014-10-22 00:04:25,150 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'MUR' with Id '3508' has been published.
+2014-10-22 00:04:25,264 [39] INFO  UmbracoExamine.DataServices.UmbracoLogService - [Thread 47] Index is being optimized, Provider=ExternalIndexer, NodeId=-1
+2014-10-22 00:04:25,282 [39] INFO  UmbracoExamine.DataServices.UmbracoLogService - [Thread 49] Index is being optimized, Provider=InternalIndexer, NodeId=-1
+2014-10-22 00:04:25,355 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'MVR' with Id '3509' has been published.
+2014-10-22 00:04:25,535 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'MWK' with Id '3510' has been published.
+2014-10-22 00:04:25,719 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'MXN' with Id '3511' has been published.
+2014-10-22 00:04:25,896 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'MYR' with Id '3512' has been published.
+2014-10-22 00:04:26,073 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'MZN' with Id '3513' has been published.
+2014-10-22 00:04:26,241 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'NAD' with Id '3514' has been published.
+2014-10-22 00:04:26,397 [39] WARN  Umbraco.Web.Dictionary.DefaultCultureDictionary - [Thread 49] Error returning dictionary item 'bottomregel'. Exception: System.ArgumentException: No key bottomregel exists in dictionary
    at umbraco.cms.businesslogic.Dictionary.DictionaryItem..ctor(String key)
    at Umbraco.Web.Dictionary.DefaultCultureDictionary.get_Item(String key)
-2014-01-16 00:11:48,637 [19] WARN  Umbraco.Web.Dictionary.DefaultCultureDictionary - [Thread 12] Error returning dictionary item 'Gemiddelde takse'. Exception: System.ArgumentException: No key Gemiddelde takse exists in dictionary
+2014-10-22 00:04:26,428 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'NGN' with Id '3515' has been published.
+2014-10-22 00:04:26,664 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'NIO' with Id '3516' has been published.
+2014-10-22 00:04:26,843 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'NOK' with Id '3517' has been published.
+2014-10-22 00:04:27,029 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'NPR' with Id '3518' has been published.
+2014-10-22 00:04:27,211 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'NZD' with Id '3519' has been published.
+2014-10-22 00:04:27,380 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'OMR' with Id '3520' has been published.
+2014-10-22 00:04:27,624 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'PAB' with Id '3521' has been published.
+2014-10-22 00:04:27,958 [39] WARN  Umbraco.Web.Dictionary.DefaultCultureDictionary - [Thread 47] Error returning dictionary item ''. Exception: System.ArgumentException: No key  exists in dictionary
    at umbraco.cms.businesslogic.Dictionary.DictionaryItem..ctor(String key)
    at Umbraco.Web.Dictionary.DefaultCultureDictionary.get_Item(String key)
-2014-01-16 00:11:48,680 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'MTL' with Id '3507' has been published.
-2014-01-16 00:11:49,041 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'MUR' with Id '3508' has been published.
-2014-01-16 00:11:49,304 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'MVR' with Id '3509' has been published.
-2014-01-16 00:11:49,668 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'MWK' with Id '3510' has been published.
-2014-01-16 00:11:49,860 [19] INFO  UmbracoExamine.DataServices.UmbracoLogService - [Thread 48] Index is being optimized, Provider=InternalIndexer, NodeId=-1
-2014-01-16 00:11:49,875 [19] INFO  UmbracoExamine.DataServices.UmbracoLogService - [Thread 7] Index is being optimized, Provider=ExternalIndexer, NodeId=-1
-2014-01-16 00:11:50,029 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'MXN' with Id '3511' has been published.
-2014-01-16 00:11:50,259 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'MYR' with Id '3512' has been published.
-2014-01-16 00:11:50,444 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'MZN' with Id '3513' has been published.
-2014-01-16 00:11:50,634 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'NAD' with Id '3514' has been published.
-2014-01-16 00:11:50,945 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'NGN' with Id '3515' has been published.
-2014-01-16 00:11:51,381 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'NIO' with Id '3516' has been published.
-2014-01-16 00:11:51,578 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'NOK' with Id '3517' has been published.
-2014-01-16 00:11:51,789 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'NPR' with Id '3518' has been published.
-2014-01-16 00:11:51,993 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'NZD' with Id '3519' has been published.
-2014-01-16 00:11:52,186 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'OMR' with Id '3520' has been published.
-2014-01-16 00:11:52,372 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'PAB' with Id '3521' has been published.
-2014-01-16 00:11:52,552 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'PEN' with Id '3522' has been published.
-2014-01-16 00:11:52,772 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'PGK' with Id '3523' has been published.
-2014-01-16 00:11:53,035 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'PHP' with Id '3524' has been published.
-2014-01-16 00:11:53,455 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'PKR' with Id '3525' has been published.
-2014-01-16 00:11:53,757 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'PLN' with Id '3526' has been published.
-2014-01-16 00:11:54,019 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'PYG' with Id '3527' has been published.
-2014-01-16 00:11:54,313 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'QAR' with Id '3528' has been published.
-2014-01-16 00:11:54,671 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'RON' with Id '3529' has been published.
-2014-01-16 00:11:54,984 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'RSD' with Id '3530' has been published.
-2014-01-16 00:11:55,201 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'RUB' with Id '3531' has been published.
-2014-01-16 00:11:55,481 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'RWF' with Id '3532' has been published.
-2014-01-16 00:11:55,987 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'SAR' with Id '3533' has been published.
-2014-01-16 00:11:56,184 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'SBD' with Id '3534' has been published.
-2014-01-16 00:11:56,390 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'SCR' with Id '3535' has been published.
-2014-01-16 00:11:56,631 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'SDG' with Id '3536' has been published.
-2014-01-16 00:11:56,883 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'SEK' with Id '3537' has been published.
-2014-01-16 00:11:57,134 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'SGD' with Id '3538' has been published.
-2014-01-16 00:11:57,404 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'SHP' with Id '3539' has been published.
-2014-01-16 00:11:57,665 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'SLL' with Id '3540' has been published.
-2014-01-16 00:11:57,935 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'SOS' with Id '3541' has been published.
-2014-01-16 00:11:58,171 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'SRD' with Id '3542' has been published.
-2014-01-16 00:11:58,367 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'STD' with Id '3543' has been published.
-2014-01-16 00:11:58,791 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'SVC' with Id '3544' has been published.
-2014-01-16 00:11:58,979 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'SYP' with Id '3545' has been published.
-2014-01-16 00:11:59,161 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'SZL' with Id '3546' has been published.
-2014-01-16 00:11:59,388 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'THB' with Id '3547' has been published.
-2014-01-16 00:11:59,879 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'TJS' with Id '3548' has been published.
-2014-01-16 00:12:00,121 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'TMT' with Id '3549' has been published.
-2014-01-16 00:12:00,361 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'TND' with Id '3550' has been published.
-2014-01-16 00:12:00,630 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'TOP' with Id '3551' has been published.
-2014-01-16 00:12:00,905 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'TRY' with Id '3552' has been published.
-2014-01-16 00:12:01,238 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'TTD' with Id '3553' has been published.
-2014-01-16 00:12:01,439 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'TWD' with Id '3554' has been published.
-2014-01-16 00:12:01,668 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'TZS' with Id '3555' has been published.
-2014-01-16 00:12:02,060 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'UAH' with Id '3556' has been published.
-2014-01-16 00:12:02,269 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'UGX' with Id '3557' has been published.
-2014-01-16 00:12:02,665 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'USD' with Id '3558' has been published.
-2014-01-16 00:12:02,856 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'UYU' with Id '3559' has been published.
-2014-01-16 00:12:03,050 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'UZS' with Id '3560' has been published.
-2014-01-16 00:12:03,134 [19] INFO  UmbracoExamine.DataServices.UmbracoLogService - [Thread 7] Index is being optimized, Provider=InternalIndexer, NodeId=-1
-2014-01-16 00:12:03,163 [19] INFO  UmbracoExamine.DataServices.UmbracoLogService - [Thread 53] Index is being optimized, Provider=ExternalIndexer, NodeId=-1
-2014-01-16 00:12:03,254 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'VEF' with Id '3561' has been published.
-2014-01-16 00:12:03,498 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'VND' with Id '3562' has been published.
-2014-01-16 00:12:03,720 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'VUV' with Id '3563' has been published.
-2014-01-16 00:12:03,984 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'WST' with Id '3564' has been published.
-2014-01-16 00:12:04,177 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'XAF' with Id '3565' has been published.
-2014-01-16 00:12:04,368 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'XAG' with Id '3566' has been published.
-2014-01-16 00:12:04,699 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'XAU' with Id '3567' has been published.
-2014-01-16 00:12:04,913 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'XCD' with Id '3568' has been published.
-2014-01-16 00:12:05,112 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'XDR' with Id '3569' has been published.
-2014-01-16 00:12:05,295 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'XOF' with Id '3570' has been published.
-2014-01-16 00:12:05,571 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'XPF' with Id '3571' has been published.
-2014-01-16 00:12:06,065 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'YER' with Id '3572' has been published.
-2014-01-16 00:12:06,319 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'ZAR' with Id '3573' has been published.
-2014-01-16 00:12:06,561 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'ZMK' with Id '3574' has been published.
-2014-01-16 00:12:06,835 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'ZMW' with Id '3575' has been published.
-2014-01-16 00:12:07,086 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 46] Content 'ZWL' with Id '3576' has been published.
-2014-01-16 00:12:12,045 [19] INFO  UmbracoExamine.DataServices.UmbracoLogService - [Thread 93] Index is being optimized, Provider=ExternalIndexer, NodeId=-1
-2014-01-16 00:12:12,120 [19] INFO  umbraco.presentation.publishingService - [Thread 62] test60 has been called with response: True
-2014-01-16 00:13:05,761 [19] INFO  umbraco.BusinessLogic.Log - [Thread 70] Log scrubbed.  Removed all items older than 2013-11-17 00:13:05
-2014-01-16 00:13:05,763 [19] INFO  Umbraco.Core.UmbracoApplicationBase - [Thread 70] Application shutdown. Reason: BinDirChangeOrDirectoryRename
-2014-01-16 00:13:10,112 [63] INFO  Umbraco.Core.PluginManager - [Thread 27] Determining hash of code files on disk
-2014-01-16 00:13:10,129 [63] INFO  Umbraco.Core.PluginManager - [Thread 27] Hash determined (took 7ms)
-2014-01-16 00:13:10,140 [63] INFO  Umbraco.Core.PluginManager - [Thread 27] Starting resolution types of umbraco.interfaces.IApplicationStartupHandler
-2014-01-16 00:13:10,249 [63] INFO  Umbraco.Core.PluginManager - [Thread 27] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 16 (took 107ms)
-2014-01-16 00:13:10,275 [63] INFO  Umbraco.Core.PluginManager - [Thread 27] Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
-2014-01-16 00:13:10,281 [63] INFO  Umbraco.Core.PluginManager - [Thread 27] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 6ms)
-2014-01-16 00:13:10,284 [63] INFO  Umbraco.Core.PluginManager - [Thread 27] Starting resolution types of Umbraco.Web.Mvc.SurfaceController
-2014-01-16 00:13:10,293 [63] INFO  Umbraco.Core.PluginManager - [Thread 27] Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 8 (took 8ms)
-2014-01-16 00:13:10,293 [63] INFO  Umbraco.Core.PluginManager - [Thread 27] Starting resolution types of Umbraco.Web.WebApi.UmbracoApiController
-2014-01-16 00:13:10,298 [63] INFO  Umbraco.Core.PluginManager - [Thread 27] Completed resolution of types of Umbraco.Web.WebApi.UmbracoApiController, found 3 (took 5ms)
-2014-01-16 00:13:10,301 [63] INFO  Umbraco.Core.PluginManager - [Thread 27] Starting resolution types of Umbraco.Core.Media.IThumbnailProvider
-2014-01-16 00:13:10,308 [63] INFO  Umbraco.Core.PluginManager - [Thread 27] Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 3 (took 6ms)
-2014-01-16 00:13:10,308 [63] INFO  Umbraco.Core.PluginManager - [Thread 27] Starting resolution types of Umbraco.Core.Media.IImageUrlProvider
-2014-01-16 00:13:10,314 [63] INFO  Umbraco.Core.PluginManager - [Thread 27] Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 1 (took 5ms)
-2014-01-16 00:13:10,519 [63] INFO  Umbraco.Web.Search.ExamineEvents - [Thread 27] Initializing Examine and binding to business logic events
-2014-01-16 00:13:10,943 [63] INFO  Umbraco.Web.Search.ExamineEvents - [Thread 27] Adding examine event handlers for index providers: 3
-2014-01-16 00:13:10,952 [63] INFO  Umbraco.Core.PluginManager - [Thread 27] Starting resolution types of umbraco.interfaces.IApplication
-2014-01-16 00:13:10,963 [63] INFO  Umbraco.Core.PluginManager - [Thread 27] Completed resolution of types of umbraco.interfaces.IApplication, found 7 (took 11ms)
-2014-01-16 00:13:11,026 [63] INFO  Umbraco.Core.PluginManager - [Thread 27] Starting resolution types of umbraco.interfaces.ITree
-2014-01-16 00:13:11,045 [63] INFO  Umbraco.Core.PluginManager - [Thread 27] Completed resolution of types of umbraco.interfaces.ITree, found 27 (took 18ms)
-2014-01-16 00:13:11,197 [63] INFO  umbraco.content - [Thread 7] Loading content from disk cache...
-2014-01-16 00:13:12,565 [63] INFO  Umbraco.Core.PluginManager - [Thread 7] Starting resolution types of Umbraco.Core.Persistence.Mappers.BaseMapper
-2014-01-16 00:13:12,571 [63] INFO  Umbraco.Core.PluginManager - [Thread 7] Completed resolution of types of Umbraco.Core.Persistence.Mappers.BaseMapper, found 17 (took 6ms)
-2014-01-16 00:13:15,369 [63] WARN  Umbraco.Web.Dictionary.DefaultCultureDictionary - [Thread 7] Error returning dictionary item 'Totaal en gemiddelde'. Exception: System.ArgumentException: No key Totaal en gemiddelde exists in dictionary
+2014-10-22 00:04:27,959 [39] WARN  Umbraco.Web.Dictionary.DefaultCultureDictionary - [Thread 47] Error returning dictionary item ''. Exception: System.ArgumentException: No key  exists in dictionary
    at umbraco.cms.businesslogic.Dictionary.DictionaryItem..ctor(String key)
    at Umbraco.Web.Dictionary.DefaultCultureDictionary.get_Item(String key)
-2014-01-16 00:13:15,369 [63] WARN  Umbraco.Web.Dictionary.DefaultCultureDictionary - [Thread 7] Error returning dictionary item 'Totaal taksen'. Exception: System.ArgumentException: No key Totaal taksen exists in dictionary
+2014-10-22 00:04:27,960 [39] WARN  Umbraco.Web.Dictionary.DefaultCultureDictionary - [Thread 47] Error returning dictionary item ''. Exception: System.ArgumentException: No key  exists in dictionary
    at umbraco.cms.businesslogic.Dictionary.DictionaryItem..ctor(String key)
    at Umbraco.Web.Dictionary.DefaultCultureDictionary.get_Item(String key)
-2014-01-16 00:13:15,371 [63] WARN  Umbraco.Web.Dictionary.DefaultCultureDictionary - [Thread 7] Error returning dictionary item 'Gemiddelde takse'. Exception: System.ArgumentException: No key Gemiddelde takse exists in dictionary
+2014-10-22 00:04:27,961 [39] WARN  Umbraco.Web.Dictionary.DefaultCultureDictionary - [Thread 47] Error returning dictionary item ''. Exception: System.ArgumentException: No key  exists in dictionary
    at umbraco.cms.businesslogic.Dictionary.DictionaryItem..ctor(String key)
    at Umbraco.Web.Dictionary.DefaultCultureDictionary.get_Item(String key)
-2014-01-16 00:13:23,964 [63] WARN  Umbraco.Web.Dictionary.DefaultCultureDictionary - [Thread 7] Error returning dictionary item 'Totaal en gemiddelde'. Exception: System.ArgumentException: No key Totaal en gemiddelde exists in dictionary
+2014-10-22 00:04:28,344 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'PEN' with Id '3522' has been published.
+2014-10-22 00:04:28,541 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'PGK' with Id '3523' has been published.
+2014-10-22 00:04:28,740 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'PHP' with Id '3524' has been published.
+2014-10-22 00:04:28,926 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'PKR' with Id '3525' has been published.
+2014-10-22 00:04:29,128 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'PLN' with Id '3526' has been published.
+2014-10-22 00:04:29,325 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'PYG' with Id '3527' has been published.
+2014-10-22 00:04:29,519 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'QAR' with Id '3528' has been published.
+2014-10-22 00:04:29,689 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'RON' with Id '3529' has been published.
+2014-10-22 00:04:29,876 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'RSD' with Id '3530' has been published.
+2014-10-22 00:04:30,056 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'RUB' with Id '3531' has been published.
+2014-10-22 00:04:30,232 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'RWF' with Id '3532' has been published.
+2014-10-22 00:04:30,422 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'SAR' with Id '3533' has been published.
+2014-10-22 00:04:30,604 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'SBD' with Id '3534' has been published.
+2014-10-22 00:04:30,777 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'SCR' with Id '3535' has been published.
+2014-10-22 00:04:30,976 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'SDG' with Id '3536' has been published.
+2014-10-22 00:04:31,056 [39] WARN  Umbraco.Web.Routing.DefaultUrlProvider - [Thread 41] Couldn't find any page with nodeId=4784. This is most likely caused by the page not being published.
+2014-10-22 00:04:31,163 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'SEK' with Id '3537' has been published.
+2014-10-22 00:04:31,479 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'SGD' with Id '3538' has been published.
+2014-10-22 00:04:31,675 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'SHP' with Id '3539' has been published.
+2014-10-22 00:04:31,884 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'SLL' with Id '3540' has been published.
+2014-10-22 00:04:32,105 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'SOS' with Id '3541' has been published.
+2014-10-22 00:04:32,316 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'SRD' with Id '3542' has been published.
+2014-10-22 00:04:32,522 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'STD' with Id '3543' has been published.
+2014-10-22 00:04:32,883 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'SVC' with Id '3544' has been published.
+2014-10-22 00:04:33,108 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'SYP' with Id '3545' has been published.
+2014-10-22 00:04:33,110 [39] WARN  Umbraco.Web.Dictionary.DefaultCultureDictionary - [Thread 41] Error returning dictionary item 'Versturen'. Exception: System.ArgumentException: No key Versturen exists in dictionary
    at umbraco.cms.businesslogic.Dictionary.DictionaryItem..ctor(String key)
    at Umbraco.Web.Dictionary.DefaultCultureDictionary.get_Item(String key)
-2014-01-16 00:13:23,964 [63] WARN  Umbraco.Web.Dictionary.DefaultCultureDictionary - [Thread 7] Error returning dictionary item 'Totaal taksen'. Exception: System.ArgumentException: No key Totaal taksen exists in dictionary
+2014-10-22 00:04:33,366 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'SZL' with Id '3546' has been published.
+2014-10-22 00:04:33,588 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'THB' with Id '3547' has been published.
+2014-10-22 00:04:33,778 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'TJS' with Id '3548' has been published.
+2014-10-22 00:04:33,968 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'TMT' with Id '3549' has been published.
+2014-10-22 00:04:34,151 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'TND' with Id '3550' has been published.
+2014-10-22 00:04:34,337 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'TOP' with Id '3551' has been published.
+2014-10-22 00:04:34,526 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'TRY' with Id '3552' has been published.
+2014-10-22 00:04:34,716 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'TTD' with Id '3553' has been published.
+2014-10-22 00:04:34,924 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'TWD' with Id '3554' has been published.
+2014-10-22 00:04:35,110 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'TZS' with Id '3555' has been published.
+2014-10-22 00:04:35,307 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'UAH' with Id '3556' has been published.
+2014-10-22 00:04:35,648 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'UGX' with Id '3557' has been published.
+2014-10-22 00:04:35,993 [39] WARN  Umbraco.Web.Dictionary.DefaultCultureDictionary - [Thread 48] Error returning dictionary item 'bottomregel'. Exception: System.ArgumentException: No key bottomregel exists in dictionary
    at umbraco.cms.businesslogic.Dictionary.DictionaryItem..ctor(String key)
    at Umbraco.Web.Dictionary.DefaultCultureDictionary.get_Item(String key)
-2014-01-16 00:13:23,964 [63] WARN  Umbraco.Web.Dictionary.DefaultCultureDictionary - [Thread 7] Error returning dictionary item 'Gemiddelde takse'. Exception: System.ArgumentException: No key Gemiddelde takse exists in dictionary
+2014-10-22 00:04:36,058 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'USD' with Id '3558' has been published.
+2014-10-22 00:04:36,222 [39] INFO  UmbracoExamine.DataServices.UmbracoLogService - [Thread 53] Index is being optimized, Provider=ExternalIndexer, NodeId=-1
+2014-10-22 00:04:36,251 [39] INFO  UmbracoExamine.DataServices.UmbracoLogService - [Thread 54] Index is being optimized, Provider=InternalIndexer, NodeId=-1
+2014-10-22 00:04:36,324 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'UYU' with Id '3559' has been published.
+2014-10-22 00:04:36,494 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'UZS' with Id '3560' has been published.
+2014-10-22 00:04:36,677 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'VEF' with Id '3561' has been published.
+2014-10-22 00:04:36,876 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'VND' with Id '3562' has been published.
+2014-10-22 00:04:37,085 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'VUV' with Id '3563' has been published.
+2014-10-22 00:04:37,281 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'WST' with Id '3564' has been published.
+2014-10-22 00:04:37,474 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'XAF' with Id '3565' has been published.
+2014-10-22 00:04:37,651 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'XAG' with Id '3566' has been published.
+2014-10-22 00:04:37,825 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'XAU' with Id '3567' has been published.
+2014-10-22 00:04:37,844 [39] WARN  Umbraco.Web.Dictionary.DefaultCultureDictionary - [Thread 47] Error returning dictionary item 'bottomregel'. Exception: System.ArgumentException: No key bottomregel exists in dictionary
    at umbraco.cms.businesslogic.Dictionary.DictionaryItem..ctor(String key)
    at Umbraco.Web.Dictionary.DefaultCultureDictionary.get_Item(String key)
-2014-01-16 00:13:41,444 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'AED' with Id '3935' has been published.
-2014-01-16 00:13:41,575 [63] INFO  Umbraco.Core.PluginManager - [Thread 7] Starting resolution types of umbraco.interfaces.IDataType
-2014-01-16 00:13:41,591 [63] INFO  Umbraco.Core.PluginManager - [Thread 7] Completed resolution of types of umbraco.interfaces.IDataType, found 36 (took 16ms)
-2014-01-16 00:13:41,601 [63] INFO  Umbraco.Core.PluginManager - [Thread 7] Starting resolution types of umbraco.interfaces.ITree
-2014-01-16 00:13:41,620 [63] INFO  Umbraco.Core.PluginManager - [Thread 7] Completed resolution of types of umbraco.interfaces.ITree, found 36 (took 18ms)
-2014-01-16 00:13:41,714 [63] INFO  Umbraco.Core.PluginManager - [Thread 7] Starting resolution types of umbraco.interfaces.ICacheRefresher
-2014-01-16 00:13:41,724 [63] INFO  Umbraco.Core.PluginManager - [Thread 7] Completed resolution of types of umbraco.interfaces.ICacheRefresher, found 22 (took 10ms)
-2014-01-16 00:13:41,780 [63] INFO  Umbraco.Core.PluginManager - [Thread 7] Starting resolution types of umbraco.BusinessLogic.Actions.IActionHandler
-2014-01-16 00:13:41,786 [63] INFO  Umbraco.Core.PluginManager - [Thread 7] Completed resolution of types of umbraco.BusinessLogic.Actions.IActionHandler, found 1 (took 6ms)
-2014-01-16 00:13:41,983 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'AFN' with Id '3412' has been published.
-2014-01-16 00:13:42,162 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'ALL' with Id '3413' has been published.
-2014-01-16 00:13:42,344 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'AMD' with Id '3414' has been published.
-2014-01-16 00:13:42,562 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'ANG' with Id '3415' has been published.
-2014-01-16 00:13:42,795 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'AOA' with Id '3416' has been published.
-2014-01-16 00:13:43,305 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'ARS' with Id '3417' has been published.
-2014-01-16 00:13:43,498 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'AUD' with Id '3418' has been published.
-2014-01-16 00:13:43,698 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'AWG' with Id '3419' has been published.
-2014-01-16 00:13:43,933 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'AZN' with Id '3420' has been published.
-2014-01-16 00:13:44,139 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'BAM' with Id '3421' has been published.
-2014-01-16 00:13:44,402 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'BBD' with Id '3422' has been published.
-2014-01-16 00:13:44,747 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'BDT' with Id '3423' has been published.
-2014-01-16 00:13:45,014 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'BGN' with Id '3424' has been published.
-2014-01-16 00:13:45,241 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'BHD' with Id '3425' has been published.
-2014-01-16 00:13:45,578 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'BIF' with Id '3426' has been published.
-2014-01-16 00:13:45,795 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'BMD' with Id '3427' has been published.
-2014-01-16 00:13:46,095 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'BND' with Id '3428' has been published.
-2014-01-16 00:13:46,555 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'BOB' with Id '3429' has been published.
-2014-01-16 00:13:46,803 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'BRL' with Id '3430' has been published.
-2014-01-16 00:13:47,097 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'BSD' with Id '3431' has been published.
-2014-01-16 00:13:47,377 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'BTC' with Id '3432' has been published.
-2014-01-16 00:13:47,553 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'BTN' with Id '3433' has been published.
-2014-01-16 00:13:47,732 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'BWP' with Id '3434' has been published.
-2014-01-16 00:13:48,050 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'BYR' with Id '3435' has been published.
-2014-01-16 00:13:48,217 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'BZD' with Id '3436' has been published.
-2014-01-16 00:13:48,404 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'CAD' with Id '3437' has been published.
-2014-01-16 00:13:48,589 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'CDF' with Id '3438' has been published.
-2014-01-16 00:13:48,795 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'CHF' with Id '3439' has been published.
-2014-01-16 00:13:49,019 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'CLF' with Id '3440' has been published.
-2014-01-16 00:13:49,327 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'CLP' with Id '3441' has been published.
-2014-01-16 00:13:49,594 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'CNY' with Id '3442' has been published.
-2014-01-16 00:13:49,818 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'COP' with Id '3443' has been published.
-2014-01-16 00:13:50,079 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'CRC' with Id '3444' has been published.
-2014-01-16 00:13:50,411 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'CUP' with Id '3445' has been published.
-2014-01-16 00:13:50,792 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'CVE' with Id '3446' has been published.
-2014-01-16 00:13:51,271 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'CZK' with Id '3447' has been published.
-2014-01-16 00:13:51,512 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'DJF' with Id '3448' has been published.
-2014-01-16 00:13:51,676 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'DKK' with Id '3449' has been published.
-2014-01-16 00:13:51,847 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'DOP' with Id '3450' has been published.
-2014-01-16 00:13:52,033 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'DZD' with Id '3451' has been published.
-2014-01-16 00:13:52,362 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'EEK' with Id '3452' has been published.
-2014-01-16 00:13:52,690 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'EGP' with Id '3453' has been published.
-2014-01-16 00:13:52,881 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'ERN' with Id '3454' has been published.
-2014-01-16 00:13:53,110 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'ETB' with Id '3455' has been published.
-2014-01-16 00:13:53,368 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'EUR' with Id '3456' has been published.
-2014-01-16 00:13:53,724 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'FJD' with Id '3457' has been published.
-2014-01-16 00:13:54,010 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'FKP' with Id '3458' has been published.
-2014-01-16 00:13:54,571 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'GBP' with Id '3459' has been published.
-2014-01-16 00:13:54,820 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'GEL' with Id '3460' has been published.
-2014-01-16 00:13:54,934 [63] INFO  UmbracoExamine.DataServices.UmbracoLogService - [Thread 62] Index is being optimized, Provider=InternalIndexer, NodeId=-1
-2014-01-16 00:13:55,056 [63] INFO  UmbracoExamine.DataServices.UmbracoLogService - [Thread 5] Index is being optimized, Provider=ExternalIndexer, NodeId=-1
-2014-01-16 00:13:55,219 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'GHS' with Id '3461' has been published.
-2014-01-16 00:13:55,564 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'GIP' with Id '3462' has been published.
-2014-01-16 00:13:55,818 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'GMD' with Id '3463' has been published.
-2014-01-16 00:13:56,044 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'GNF' with Id '3464' has been published.
-2014-01-16 00:13:56,291 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'GTQ' with Id '3465' has been published.
-2014-01-16 00:13:56,915 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'GYD' with Id '3466' has been published.
-2014-01-16 00:13:57,106 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'HKD' with Id '3467' has been published.
-2014-01-16 00:13:57,304 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'HNL' with Id '3468' has been published.
-2014-01-16 00:13:57,521 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'HRK' with Id '3469' has been published.
-2014-01-16 00:13:57,718 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'HTG' with Id '3470' has been published.
-2014-01-16 00:13:57,969 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'HUF' with Id '3471' has been published.
-2014-01-16 00:13:58,243 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'IDR' with Id '3472' has been published.
-2014-01-16 00:13:58,538 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'ILS' with Id '3473' has been published.
-2014-01-16 00:13:58,731 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'INR' with Id '3474' has been published.
-2014-01-16 00:13:59,113 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'IQD' with Id '3475' has been published.
-2014-01-16 00:13:59,301 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'IRR' with Id '3476' has been published.
-2014-01-16 00:13:59,519 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'ISK' with Id '3477' has been published.
-2014-01-16 00:13:59,694 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'JEP' with Id '3478' has been published.
-2014-01-16 00:13:59,908 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'JMD' with Id '3479' has been published.
-2014-01-16 00:14:00,095 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'JOD' with Id '3480' has been published.
-2014-01-16 00:14:00,376 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'JPY' with Id '3481' has been published.
-2014-01-16 00:14:00,845 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'KES' with Id '3482' has been published.
-2014-01-16 00:14:01,080 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'KGS' with Id '3483' has been published.
-2014-01-16 00:14:01,265 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'KHR' with Id '3484' has been published.
-2014-01-16 00:14:01,467 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'KMF' with Id '3485' has been published.
-2014-01-16 00:14:01,648 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'KPW' with Id '3486' has been published.
-2014-01-16 00:14:01,882 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'KRW' with Id '3487' has been published.
-2014-01-16 00:14:02,318 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'KWD' with Id '3488' has been published.
-2014-01-16 00:14:02,595 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'KYD' with Id '3489' has been published.
-2014-01-16 00:14:02,827 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'KZT' with Id '3490' has been published.
-2014-01-16 00:14:03,125 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'LAK' with Id '3491' has been published.
-2014-01-16 00:14:03,392 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'LBP' with Id '3492' has been published.
-2014-01-16 00:14:03,595 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'LKR' with Id '3493' has been published.
-2014-01-16 00:14:03,954 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'LRD' with Id '3494' has been published.
-2014-01-16 00:14:04,169 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'LSL' with Id '3495' has been published.
-2014-01-16 00:14:04,357 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'LTL' with Id '3496' has been published.
-2014-01-16 00:14:04,564 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'LVL' with Id '3497' has been published.
-2014-01-16 00:14:04,782 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'LYD' with Id '3498' has been published.
-2014-01-16 00:14:05,020 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'MAD' with Id '3499' has been published.
-2014-01-16 00:14:05,287 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'MDL' with Id '3500' has been published.
-2014-01-16 00:14:05,587 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'MGA' with Id '3501' has been published.
-2014-01-16 00:14:05,832 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'MKD' with Id '3502' has been published.
-2014-01-16 00:14:06,095 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'MMK' with Id '3503' has been published.
-2014-01-16 00:14:06,339 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'MNT' with Id '3504' has been published.
-2014-01-16 00:14:06,553 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'MOP' with Id '3505' has been published.
-2014-01-16 00:14:06,731 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'MRO' with Id '3506' has been published.
-2014-01-16 00:14:06,911 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'MTL' with Id '3507' has been published.
-2014-01-16 00:14:07,092 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'MUR' with Id '3508' has been published.
-2014-01-16 00:14:07,269 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'MVR' with Id '3509' has been published.
-2014-01-16 00:14:07,464 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'MWK' with Id '3510' has been published.
-2014-01-16 00:14:07,584 [63] INFO  UmbracoExamine.DataServices.UmbracoLogService - [Thread 12] Index is being optimized, Provider=InternalIndexer, NodeId=-1
-2014-01-16 00:14:07,595 [63] INFO  UmbracoExamine.DataServices.UmbracoLogService - [Thread 62] Index is being optimized, Provider=ExternalIndexer, NodeId=-1
-2014-01-16 00:14:07,752 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'MXN' with Id '3511' has been published.
-2014-01-16 00:14:08,003 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'MYR' with Id '3512' has been published.
-2014-01-16 00:14:08,274 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'MZN' with Id '3513' has been published.
-2014-01-16 00:14:08,534 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'NAD' with Id '3514' has been published.
-2014-01-16 00:14:08,771 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'NGN' with Id '3515' has been published.
-2014-01-16 00:14:09,009 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'NIO' with Id '3516' has been published.
-2014-01-16 00:14:09,334 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'NOK' with Id '3517' has been published.
-2014-01-16 00:14:09,701 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'NPR' with Id '3518' has been published.
-2014-01-16 00:14:09,880 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'NZD' with Id '3519' has been published.
-2014-01-16 00:14:10,069 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'OMR' with Id '3520' has been published.
-2014-01-16 00:14:10,249 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'PAB' with Id '3521' has been published.
-2014-01-16 00:14:10,446 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'PEN' with Id '3522' has been published.
-2014-01-16 00:14:10,858 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'PGK' with Id '3523' has been published.
-2014-01-16 00:14:11,039 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'PHP' with Id '3524' has been published.
-2014-01-16 00:14:11,346 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'PKR' with Id '3525' has been published.
-2014-01-16 00:14:11,536 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'PLN' with Id '3526' has been published.
-2014-01-16 00:14:11,756 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'PYG' with Id '3527' has been published.
-2014-01-16 00:14:11,957 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'QAR' with Id '3528' has been published.
-2014-01-16 00:14:12,158 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'RON' with Id '3529' has been published.
-2014-01-16 00:14:12,413 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'RSD' with Id '3530' has been published.
-2014-01-16 00:14:12,616 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'RUB' with Id '3531' has been published.
-2014-01-16 00:14:13,132 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'RWF' with Id '3532' has been published.
-2014-01-16 00:14:13,387 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'SAR' with Id '3533' has been published.
-2014-01-16 00:14:13,652 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'SBD' with Id '3534' has been published.
-2014-01-16 00:14:14,213 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'SCR' with Id '3535' has been published.
-2014-01-16 00:14:14,392 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'SDG' with Id '3536' has been published.
-2014-01-16 00:14:14,703 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'SEK' with Id '3537' has been published.
-2014-01-16 00:14:14,995 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'SGD' with Id '3538' has been published.
-2014-01-16 00:14:15,321 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'SHP' with Id '3539' has been published.
-2014-01-16 00:14:15,500 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'SLL' with Id '3540' has been published.
-2014-01-16 00:14:15,687 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'SOS' with Id '3541' has been published.
-2014-01-16 00:14:15,863 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'SRD' with Id '3542' has been published.
-2014-01-16 00:14:16,052 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'STD' with Id '3543' has been published.
-2014-01-16 00:14:16,237 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'SVC' with Id '3544' has been published.
-2014-01-16 00:14:16,424 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'SYP' with Id '3545' has been published.
-2014-01-16 00:14:16,677 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'SZL' with Id '3546' has been published.
-2014-01-16 00:14:16,925 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'THB' with Id '3547' has been published.
-2014-01-16 00:14:17,182 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'TJS' with Id '3548' has been published.
-2014-01-16 00:14:17,443 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'TMT' with Id '3549' has been published.
-2014-01-16 00:14:18,301 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'TND' with Id '3550' has been published.
-2014-01-16 00:14:18,490 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'TOP' with Id '3551' has been published.
-2014-01-16 00:14:18,661 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'TRY' with Id '3552' has been published.
-2014-01-16 00:14:18,827 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'TTD' with Id '3553' has been published.
-2014-01-16 00:14:18,998 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'TWD' with Id '3554' has been published.
-2014-01-16 00:14:19,423 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'TZS' with Id '3555' has been published.
-2014-01-16 00:14:19,651 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'UAH' with Id '3556' has been published.
-2014-01-16 00:14:19,838 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'UGX' with Id '3557' has been published.
-2014-01-16 00:14:20,033 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'USD' with Id '3558' has been published.
-2014-01-16 00:14:20,207 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'UYU' with Id '3559' has been published.
-2014-01-16 00:14:20,380 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'UZS' with Id '3560' has been published.
-2014-01-16 00:14:20,477 [63] INFO  UmbracoExamine.DataServices.UmbracoLogService - [Thread 5] Index is being optimized, Provider=InternalIndexer, NodeId=-1
-2014-01-16 00:14:20,500 [63] INFO  UmbracoExamine.DataServices.UmbracoLogService - [Thread 62] Index is being optimized, Provider=ExternalIndexer, NodeId=-1
-2014-01-16 00:14:20,620 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'VEF' with Id '3561' has been published.
-2014-01-16 00:14:20,845 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'VND' with Id '3562' has been published.
-2014-01-16 00:14:21,057 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'VUV' with Id '3563' has been published.
-2014-01-16 00:14:21,341 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'WST' with Id '3564' has been published.
-2014-01-16 00:14:21,583 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'XAF' with Id '3565' has been published.
-2014-01-16 00:14:21,814 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'XAG' with Id '3566' has been published.
-2014-01-16 00:14:22,265 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'XAU' with Id '3567' has been published.
-2014-01-16 00:14:22,456 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'XCD' with Id '3568' has been published.
-2014-01-16 00:14:22,689 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'XDR' with Id '3569' has been published.
-2014-01-16 00:14:22,870 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'XOF' with Id '3570' has been published.
-2014-01-16 00:14:23,089 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'XPF' with Id '3571' has been published.
-2014-01-16 00:14:23,587 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'YER' with Id '3572' has been published.
-2014-01-16 00:14:23,799 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'ZAR' with Id '3573' has been published.
-2014-01-16 00:14:24,001 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'ZMK' with Id '3574' has been published.
-2014-01-16 00:14:24,236 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'ZMW' with Id '3575' has been published.
-2014-01-16 00:14:24,454 [63] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'ZWL' with Id '3576' has been published.
-2014-01-16 00:14:30,301 [63] INFO  umbraco.presentation.publishingService - [Thread 9] test60 has been called with response: True
-2014-01-16 00:14:30,445 [63] INFO  UmbracoExamine.DataServices.UmbracoLogService - [Thread 12] Index is being optimized, Provider=ExternalIndexer, NodeId=-1
+2014-10-22 00:04:38,647 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'XCD' with Id '3568' has been published.
+2014-10-22 00:04:38,857 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'XDR' with Id '3569' has been published.
+2014-10-22 00:04:39,058 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'XOF' with Id '3570' has been published.
+2014-10-22 00:04:39,266 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'XPF' with Id '3571' has been published.
+2014-10-22 00:04:39,455 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'YER' with Id '3572' has been published.
+2014-10-22 00:04:39,623 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'ZAR' with Id '3573' has been published.
+2014-10-22 00:04:39,787 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'ZMK' with Id '3574' has been published.
+2014-10-22 00:04:39,958 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'ZMW' with Id '3575' has been published.
+2014-10-22 00:04:40,133 [39] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content 'ZWL' with Id '3576' has been published.
+2014-10-22 00:04:43,845 [39] INFO  umbraco.presentation.publishingService - [Thread 26] test60 has been called with response: True
+2014-10-22 00:04:43,927 [39] INFO  UmbracoExamine.DataServices.UmbracoLogService - [Thread 49] Index is being optimized, Provider=ExternalIndexer, NodeId=-1
+2014-10-22 00:04:58,488 [39] WARN  Umbraco.Web.Dictionary.DefaultCultureDictionary - [Thread 49] Error returning dictionary item 'bottomregel'. Exception: System.ArgumentException: No key bottomregel exists in dictionary
+   at umbraco.cms.businesslogic.Dictionary.DictionaryItem..ctor(String key)
+   at Umbraco.Web.Dictionary.DefaultCultureDictionary.get_Item(String key)
+2014-10-22 00:05:00,177 [39] WARN  Umbraco.Web.Dictionary.DefaultCultureDictionary - [Thread 43] Error returning dictionary item 'bottomregel'. Exception: System.ArgumentException: No key bottomregel exists in dictionary
+   at umbraco.cms.businesslogic.Dictionary.DictionaryItem..ctor(String key)
+   at Umbraco.Web.Dictionary.DefaultCultureDictionary.get_Item(String key)
+2014-10-22 00:05:13,732 [39] WARN  Umbraco.Web.Dictionary.DefaultCultureDictionary - [Thread 48] Error returning dictionary item 'bottomregel'. Exception: System.ArgumentException: No key bottomregel exists in dictionary
+   at umbraco.cms.businesslogic.Dictionary.DictionaryItem..ctor(String key)
+   at Umbraco.Web.Dictionary.DefaultCultureDictionary.get_Item(String key)
+2014-10-22 00:05:22,136 [39] WARN  Umbraco.Web.Dictionary.DefaultCultureDictionary - [Thread 35] Error returning dictionary item 'bottomregel'. Exception: System.ArgumentException: No key bottomregel exists in dictionary
+   at umbraco.cms.businesslogic.Dictionary.DictionaryItem..ctor(String key)
+   at Umbraco.Web.Dictionary.DefaultCultureDictionary.get_Item(String key)
+2014-10-22 00:05:41,582 [39] WARN  Umbraco.Web.Dictionary.DefaultCultureDictionary - [Thread 49] Error returning dictionary item 'bottomregel'. Exception: System.ArgumentException: No key bottomregel exists in dictionary
+   at umbraco.cms.businesslogic.Dictionary.DictionaryItem..ctor(String key)
+   at Umbraco.Web.Dictionary.DefaultCultureDictionary.get_Item(String key)
+2014-10-22 00:05:43,342 [39] WARN  Umbraco.Web.Dictionary.DefaultCultureDictionary - [Thread 26] Error returning dictionary item 'bottomregel'. Exception: System.ArgumentException: No key bottomregel exists in dictionary
+   at umbraco.cms.businesslogic.Dictionary.DictionaryItem..ctor(String key)
+   at Umbraco.Web.Dictionary.DefaultCultureDictionary.get_Item(String key)
+2014-10-22 00:05:44,269 [39] WARN  Umbraco.Web.Dictionary.DefaultCultureDictionary - [Thread 54] Error returning dictionary item 'bottomregel'. Exception: System.ArgumentException: No key bottomregel exists in dictionary
+   at umbraco.cms.businesslogic.Dictionary.DictionaryItem..ctor(String key)
+   at Umbraco.Web.Dictionary.DefaultCultureDictionary.get_Item(String key)
+2014-10-22 00:05:44,999 [39] WARN  Umbraco.Web.Dictionary.DefaultCultureDictionary - [Thread 51] Error returning dictionary item 'bottomregel'. Exception: System.ArgumentException: No key bottomregel exists in dictionary
+   at umbraco.cms.businesslogic.Dictionary.DictionaryItem..ctor(String key)
+   at Umbraco.Web.Dictionary.DefaultCultureDictionary.get_Item(String key)

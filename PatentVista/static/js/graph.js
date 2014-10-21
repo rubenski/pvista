@@ -52,7 +52,7 @@ function loadGraph(currentCurrency) {
                 scaleSteps: 10,
                 scaleStepWidth: data.StepWidth,
                 scaleStartValue: 0,
-                scaleLineColor: "rgba(0,0,0,.1)",
+                scaleLineColor: "#004A80",
                 scaleLineWidth: 1,
                 scaleShowLabels: true,
                 scaleFontSize: 12,
