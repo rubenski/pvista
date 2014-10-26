@@ -1,0 +1,118 @@
+﻿@inherits UmbracoViewPage<PatentVista.Models.CountryCost>
+
+@{
+    Layout = null;
+}
+
+@{ string currencyCode = "EUR";}
+@if (Request.Params["currency"] != null)
+{
+    currencyCode = Request.Params["currency"];
+}
+
+
+<table class="datatable">
+    <tr class="superheader">
+        <th colspan="2">@Umbraco.GetDictionaryValue("Taksen")  in @Umbraco.GetDictionaryValue(currencyCode)</th>
+    </tr>
+    <tr class="normalheader">
+        <th>@Umbraco.GetDictionaryValue("Jaar")</th>
+        <th>@Umbraco.GetDictionaryValue("Bedrag")</th>
+    	@for (int i = 1; i <= 10; i++ )
+    {
+        <tr>
+            <td>@Umbraco.GetDictionaryValue("Jaar") @i</td>
+            <td>@Model.GetYear(i)</td>
+        </tr>
+    }
+</table>
+
+<table class="datatable">
+    <tr class="superheader">
+        <th colspan="2">@Umbraco.GetDictionaryValue("Taksen")  in @Umbraco.GetDictionaryValue(currencyCode)</th>
+    </tr>
+    <tr class="normalheader">
+    <th>@Umbraco.GetDictionaryValue("Jaar")</th>
+    <th>@Umbraco.GetDictionaryValue("Bedrag")</th>
+    @for (int i = 11; i <= 20; i++ )
+    {
+        <tr>
+            <td>@Umbraco.GetDictionaryValue("Jaar") @i</td>
+            <td>@Model.GetYear(i)</td>
+        </tr>
+    }
+</table>
+
+
+<table class="datatable">
+    <tr>
+        <td>@Umbraco.GetDictionaryValue("Totaal taksen")   in @Umbraco.GetDictionaryValue(currencyCode)</td>
+        <td>@Model.GetTotalAndAverage().Total </td>
+    </tr>
+</table>
+<table class="datatable">
+    <tr>
+        <td>@Umbraco.GetDictionaryValue("Gemiddelde takse")  in @Umbraco.GetDictionaryValue(currencyCode) </td>
+        <td>@Model.GetTotalAndAverage().Average </td>
+    </tr>
+</table>
+
+<br style="clear:both"/>
+
+
+<table class="datatable">
+    <tr class="superheader">
+        <th colspan="2">@Umbraco.GetDictionaryValue("Overige kosten")   in @Umbraco.GetDictionaryValue(currencyCode)</th>
+    </tr>
+    <tr class="normalheader">
+        <th>@Umbraco.GetDictionaryValue("Omschrijving")</th>
+        <th>@Umbraco.GetDictionaryValue("Bedrag")</th>
+    </tr>
+    <tr>
+        <td>@Umbraco.GetDictionaryValue("Eerste indiening")</td>
+        <td>@Model.EersteIndiening</td>
+    </tr>
+    <tr>
+        <td>@Umbraco.GetDictionaryValue("Online indienen")</td>
+        <td>@Model.OnlineIndienen</td>
+    </tr>
+    <tr>
+        <td>@Umbraco.GetDictionaryValue("Extra claimkosten vanaf 10")</td>
+        <td>@Model.ExtraClaimkostenVanafClaim10</td>
+    </tr>
+    <tr>
+        <td>@Umbraco.GetDictionaryValue("Nieuwheidsonderzoek nationaal")</td>
+        <td>@Model.NieuwheidsonderzoekNationaalType</td>
+    </tr>
+    <tr>
+        <td>@Umbraco.GetDictionaryValue("Nieuwheidsonderzoek internationaal")</td>
+        <td>@Model.NieuwheidsonderzoekInternationaalType</td>
+    </tr>
+</table>
+<table class="datatable">
+    <tr class="superheader">
+        <th colspan="2">@Umbraco.GetDictionaryValue("Overige kosten")   in @Umbraco.GetDictionaryValue(currencyCode)</th>
+    </tr>
+    <tr class="normalheader">
+        <th>@Umbraco.GetDictionaryValue("Omschrijving")</th>
+        <th>@Umbraco.GetDictionaryValue("Bedrag")</th>
+    </tr>
+    <tr>
+        <td>@Umbraco.GetDictionaryValue("Examination")</td>
+        <td>@Model.Examination</td>
+    </tr>
+    <tr>
+        <td>@Umbraco.GetDictionaryValue("Kosten verlening")</td>
+        <td>@Model.KostenVerlening</td>
+    </tr>
+    <tr>
+        <td>@Umbraco.GetDictionaryValue("Publicatiekosten verlening")</td>
+        <td>@Model.PublicatiekostenVerlening</td>
+    </tr>
+    <tr>
+        <td colspan="2">@Umbraco.Field("opmerkingen")</td>
+    </tr>
+</table>
+
+
+

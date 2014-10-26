@@ -1,0 +1,20 @@
+﻿@inherits UmbracoViewPage<PatentVista.Models.CountryListingModel>
+
+@foreach (var continent in Model.GetContinents())
+{
+    <h2>@Umbraco.GetDictionaryValue(@continent.Name)</h2> 
+    <table class="countrytable">
+        @foreach (var row in continent.GetTableRows())
+        {
+            <tr>
+                @foreach (var link in row)
+                {
+                    <td><a href="@link.Href">@link.LinkText</a></td>
+                }
+            </tr>   
+        }
+    </table>
+}
+
+
+

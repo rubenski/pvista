@@ -1,0 +1,53 @@
+﻿@using PatentVista.Business
+@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    Layout = "Main.cshtml";
+}
+
+<h1>@Model.Content.GetPropertyValue("paginatitel")</h1>
+
+<div id="textwrapper">
+    <div class="textcolumn">@Model.Content.GetPropertyValue("tekstLinks").ToString().Adsensed()</div>
+    <div class="textcolumn">@Model.Content.GetPropertyValue("tekstRechts").ToString().Adsensed()
+	<br><A HREF="javascript:javascript:history.go(-1)"><img width="17" height="17" src="/media/145227/pijlterug.gif">&nbsp;&nbsp; Terug naar de vorige pagina</A></div>
+</div>
+
+@section title
+{
+    @Umbraco.Field("browserTitel")
+}
+
+<div id="paging">
+@{
+    var i = 1;
+    var pages = Model.Content.AncestorOrSelf("Artikel").DescendantsOrSelf();
+    
+    if (pages.Count() > 1)
+    {
+        
+        @Umbraco.GetDictionaryValue("Meer")   <span>:</span>  
+        <ul> 
+            @foreach (var page in pages)
+            {
+                if (page.Id.Equals(Model.Content.Id))
+                {
+                    <li>@Umbraco.GetDictionaryValue("Pagina") @i</li>
+                }
+                else
+                {
+                    <li><a href="@page.Url">@Umbraco.GetDictionaryValue("Pagina") @i</a></li>    
+                }
+               
+                i = i + 1;
+            } 
+        </ul>        
+    }
+       
+}
+
+
+
+</div>
+<br>
+<div class="oranjebar_bottom"></div>
+<br>@Umbraco.GetDictionaryValue("bottomregel")

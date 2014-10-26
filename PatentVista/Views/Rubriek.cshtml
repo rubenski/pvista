@@ -1,0 +1,44 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    Layout = "Main.cshtml";
+}
+
+@section title
+{
+    @Umbraco.Field("browserTitel")
+}
+
+
+<h1>@Model.Content.GetPropertyValue("paginatitel")</h1>
+
+<p>@Model.Content.GetPropertyValue("introductie")</p>
+ 
+
+@foreach (var artikel in Model.Content.Children)
+{
+    <div class="listingitem">
+        <div class="image">
+        @if (artikel.GetProperty("lijstplaatje") != null && artikel.GetProperty("lijstplaatje").HasValue())
+        {
+            <a href="@artikel.Url"><img src="/ImageGen.ashx?image=@Umbraco.TypedMedia(artikel.GetProperty("lijstplaatje").Value).GetProperty("umbracoFile").Value&width=80&height=80&constrain=True&bgcolor=white&crop=noresize&pad=False"/></a>
+        }
+        else
+        {
+            <span>&nbsp;</span>
+        }
+        </div> 
+        <div class="desc">
+            <a href="@artikel.Url">@artikel.GetProperty("paginatitel").Value</a>
+        
+            @if (artikel.GetProperty("korteIntroVoorRubrieklijsten") != null)
+            {
+                <p>@artikel.GetProperty("korteIntroVoorRubrieklijsten").Value</p>
+            }    
+        </div>
+        	
+    </div>  
+}
+<br><A HREF="javascript:javascript:history.go(-1)"><img width="25" height="25" src="/media/145227/pijlterug.gif"></A>
+<br><br>
+<div class="oranjebar_bottom"></div>
+<br>@Umbraco.GetDictionaryValue("bottomregel")

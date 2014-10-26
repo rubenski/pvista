@@ -1,0 +1,75 @@
+﻿@inherits UmbracoViewPage<PatentVista.Models.CountryCost>
+
+@{
+    Layout = null;
+}
+
+@{ string currencyCode = "EUR";}
+@if (Request.Params["currency"] != null)
+{
+    currencyCode = Request.Params["currency"];
+}
+
+
+<table class="datatable">
+    <tr class="superheader">
+        <th colspan="2">@Umbraco.GetDictionaryValue("Taksen")  in @Umbraco.GetDictionaryValue(currencyCode)</th>
+    </tr>
+    <tr class="normalheader">
+        <th>@Umbraco.GetDictionaryValue("Jaar")</th>
+        <th>@Umbraco.GetDictionaryValue("Bedrag")</th>
+    	@for (int i = 1; i <= 10; i++ )
+    {
+        <tr>
+            <td>@Umbraco.GetDictionaryValue("Jaar") @i</td>
+            <td>@Model.GetYear(i)</td>
+        </tr>
+    }
+</table>
+
+<table class="datatable">
+    <tr class="superheader">
+        <th colspan="2">@Umbraco.GetDictionaryValue("Taksen")  in @Umbraco.GetDictionaryValue(currencyCode)</th>
+    </tr>
+    <tr class="normalheader">
+    <th>@Umbraco.GetDictionaryValue("Jaar")</th>
+    <th>@Umbraco.GetDictionaryValue("Bedrag")</th>
+    @for (int i = 11; i <= 20; i++ )
+    {
+        <tr>
+            <td>@Umbraco.GetDictionaryValue("Jaar") @i</td>
+            <td>@Model.GetYear(i)</td>
+        </tr>
+    }
+</table>
+
+
+<table class="datatable">
+    <tr>
+        <td>@Umbraco.GetDictionaryValue("Totaal taksen")   in @Umbraco.GetDictionaryValue(currencyCode)</td>
+        <td>@Model.GetTotalAndAverage().Total </td>
+    </tr>
+</table>
+<table class="datatable">
+    <tr>
+        <td>@Umbraco.GetDictionaryValue("Gemiddelde takse")  in @Umbraco.GetDictionaryValue(currencyCode) </td>
+        <td>@Model.GetTotalAndAverage().Average </td>
+    </tr>
+</table>
+
+<br style="clear:both"/>
+
+
+<table class="datatable">
+    <tr class="superheader">
+        <th colspan="2">@Umbraco.GetDictionaryValue("Opmerkingen")</th>
+    </tr>
+
+    <tr>
+        <td colspan="2">@Umbraco.Field("opmerkingen")</td>
+    </tr>
+</table>
+
+
+
+
