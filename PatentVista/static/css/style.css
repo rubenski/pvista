@@ -404,3 +404,7 @@ caption-side:top;
 font-size:0.8em;
 text-align:right;
 }
+
+h2:first-child, h3:first-child { 
+    margin-top:0;
+}
